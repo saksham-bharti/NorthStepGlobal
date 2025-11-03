@@ -1,33 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
-import Button from '../../../components/ui/Button';
 
 const CTASection = () => {
 
   const contactMethods = [
     {
       method: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 98711 59600',
       icon: 'Phone',
-      description: 'Speak directly with our team'
+      description: 'Speak directly with our team',
+      link: 'tel:+919871159600'
     },
     {
       method: 'Email',
-      value: 'hello@northstep.com',
+      value: 'contact@northstep.com',
       icon: 'Mail',
-      description: 'Send us your questions'
+      description: 'Send us your questions',
+      link: 'mailto:contact@northstep.com'
     },
     {
       method: 'Office',
-      value: 'New York, NY',
+      value:  'CoWorkZen 6th Floor, Alphathum, Tower C, Sector 90, Noida, Uttar Pradesh 201304',
       icon: 'MapPin',
-      description: 'Visit our headquarters'
+      description: 'Visit our headquarters',
+      link: 'https://maps.google.com?q=28.5132195,77.4079183'
     }
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+    <section className="py-10 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         
         {/* Contact Information */}
@@ -43,58 +44,45 @@ const CTASection = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {contactMethods?.map((contact, index) => (
-              <div key={index} className="text-center group">
+              <a
+                key={index}
+                href={contact?.link}
+                target={contact?.method === 'Office' ? '_blank' : '_self'}
+                rel={contact?.method === 'Office' ? 'noopener noreferrer' : undefined}
+                className="text-center group cursor-pointer block"
+              >
                 <div className="w-16 h-16 bg-gradient-elevation-subtle rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Icon name={contact?.icon} size={24} className="text-primary" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-1">
                   {contact?.method}
                 </h4>
-                <p className="text-primary font-medium mb-2">
+                <p className="text-primary font-medium mb-2 group-hover:underline transition-all duration-200">
                   {contact?.value}
                 </p>
                 <p className="text-sm text-muted-foreground">
                   {contact?.description}
                 </p>
-              </div>
+              </a>
             ))}
           </div>
 
           {/* Emergency Contact */}
           <div className="mt-8 pt-8 border-t border-border text-center">
-            <div className="inline-flex items-center space-x-2 bg-warning/10 px-4 py-2 rounded-full">
+            <a
+              href="tel:+919871159600"
+              className="inline-flex items-center space-x-2 bg-warning/10 px-4 py-2 rounded-full hover:bg-warning/20 transition-all duration-300 cursor-pointer group"
+            >
               <Icon name="Clock" size={16} className="text-warning" />
-              <span className="text-sm font-medium text-warning">
-                Urgent Hiring Needs? Call us 24/7 at +1 (555) 999-HIRE
+              <span className="text-sm font-medium text-warning group-hover:underline">
+                Urgent Hiring Needs? Call us 24/7 at +91 98711 59600
               </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Trust Signals */}
-        <div className="mt-16 text-center">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-2">
-              <div className="text-2xl font-bold text-primary">2,500+</div>
-              <div className="text-sm text-muted-foreground">Successful Placements</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-2xl font-bold text-secondary">500+</div>
-              <div className="text-sm text-muted-foreground">Partner Companies</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-2xl font-bold text-success">95%</div>
-              <div className="text-sm text-muted-foreground">Success Rate</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-2xl font-bold text-accent">4+ Years</div>
-              <div className="text-sm text-muted-foreground">Industry Experience</div>
-            </div>
+            </a>
           </div>
         </div>
 
         {/* Final Message */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <div className="max-w-2xl mx-auto">
             <p className="text-lg text-foreground font-medium mb-4">
               "Your next breakthrough is just one conversation away."

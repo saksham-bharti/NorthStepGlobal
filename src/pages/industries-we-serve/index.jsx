@@ -4,7 +4,6 @@ import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import IndustryHero from './components/IndustryHero';
 import IndustryGrid from './components/IndustryGrid';
-import Icon from '../../components/AppIcon';
 
 
 const IndustriesWeServe = () => {

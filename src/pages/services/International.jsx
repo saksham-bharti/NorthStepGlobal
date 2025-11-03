@@ -9,7 +9,7 @@ const International = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-20">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-14">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -29,7 +29,7 @@ const International = () => {
         </section>
 
         {/* Global Sourcing / International Hiring Overview (text-focused) */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Sourcing & International Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Your Gateway to Worldwide Talent</p>
@@ -84,86 +84,6 @@ const International = () => {
             </div>
           </div>
         </section>
-        {/* Process Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                International Hiring Process
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our systematic approach ensures successful international placements while 
-                managing all complexities of cross-border hiring.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">1</span>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Global Sourcing</h3>
-                <p className="text-muted-foreground">
-                  Leveraging our international network to identify and engage with qualified 
-                  candidates across target markets.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">2</span>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Compliance Check</h3>
-                <p className="text-muted-foreground">
-                  Verifying work authorization, visa requirements, and ensuring compliance 
-                  with local employment laws.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">3</span>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Cultural Assessment</h3>
-                <p className="text-muted-foreground">
-                  Evaluating cultural fit, communication skills, and adaptability to ensure 
-                  successful integration.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">4</span>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Integration Support</h3>
-                <p className="text-muted-foreground">
-                  Providing ongoing support for relocation, cultural adaptation, and 
-                  successful onboarding.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Compliance & Mobility */}
-        <section className="py-20 bg-muted/30 animate-fade-in">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Compliance, Immigration & Mobility</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">We navigate complex cross-border rules so your teams can focus on impact.</p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[{ icon: 'FileText', title: 'Work Permits', desc: 'End-to-end guidance for permits, visas, and extensions.' }, { icon: 'Shield', title: 'Legal & Tax', desc: 'Local employment law and basic tax compliance guidance.' }, { icon: 'Plane', title: 'Relocation', desc: 'Housing, schools, banking, and settlement support.' }, { icon: 'Languages', title: 'Cultural Readiness', desc: 'Cross-cultural onboarding for leaders and teams.' }].map((c, i) => (
-                <div key={i} className="bg-white p-8 rounded-lg border border-border card-premium elevation-hover animate-slide-up">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"><Icon name={c.icon} size={24} className="text-primary" /></div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{c.title}</h3>
-                  <p className="text-muted-foreground">{c.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
       </main>
       <Footer />
     </div>

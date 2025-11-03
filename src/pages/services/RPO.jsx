@@ -9,7 +9,7 @@ const RPO = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-20">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-14">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -29,7 +29,7 @@ const RPO = () => {
         </section>
 
         {/* RPO Overview (text-focused for HR) */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Scalable talent, seamless integration</p>
@@ -83,82 +83,6 @@ const RPO = () => {
                 <li><span className="font-medium text-foreground">Superior Candidate Experience:</span> Every candidate receives a
                 professional, engaging, and positive experience, enhancing your employer brand.</li>
               </ul>
-            </div>
-          </div>
-        </section>
-{/* RPO Overview */}
-<section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Complete Recruitment Process Outsourcing
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Our RPO solutions provide end-to-end recruitment services, from job posting 
-                  and candidate sourcing to onboarding. We become an extension of your HR team, 
-                  delivering consistent, high-quality results while you focus on core business operations.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="Check" size={14} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Scalable Operations</h3>
-                      <p className="text-muted-foreground">Flexible solutions that scale with your hiring needs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="Check" size={14} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Advanced Technology</h3>
-                      <p className="text-muted-foreground">Cutting-edge ATS and recruitment tools for optimal efficiency</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="Check" size={14} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Dedicated Teams</h3>
-                      <p className="text-muted-foreground">Specialized recruiters focused on your industry and requirements</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="Check" size={14} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Cost Optimization</h3>
-                      <p className="text-muted-foreground">Reduced recruitment costs while improving quality and speed</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-foreground mb-6">RPO Performance Metrics</h3>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">40%</div>
-                    <div className="text-sm text-muted-foreground">Cost Reduction</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">60%</div>
-                    <div className="text-sm text-muted-foreground">Faster Time-to-Hire</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">95%</div>
-                    <div className="text-sm text-muted-foreground">Quality Score</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                    <div className="text-sm text-muted-foreground">Recruitment Support</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>

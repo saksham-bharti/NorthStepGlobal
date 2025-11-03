@@ -11,29 +11,15 @@ const IndustryGrid = () => {
       icon: "Code",
       description: "From startups to enterprise, we connect top tech talent with innovative companies driving digital transformation.",
       image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "2,500+",
-        avgSalary: "$125K",
-        timeToHire: "18 days"
-      },
-      specializations: ["Software Engineering", "DevOps", "Data Science", "Cybersecurity", "Product Management"],
-      consultants: 45,
-      successRate: "94%"
+      specializations: ["Software Engineering", "DevOps", "Data Science", "Cybersecurity", "Product Management"]
     },
     {
       id: 2,
       name: "Healthcare & Life Sciences",
       icon: "Heart",
       description: "Connecting healthcare professionals with leading medical institutions and life sciences organizations.",
-      image: "https://images.pixabay.com/photos/2559/medical-563427_1280.jpg?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "1,800+",
-        avgSalary: "$98K",
-        timeToHire: "22 days"
-      },
-      specializations: ["Clinical Research", "Medical Devices", "Pharmaceuticals", "Healthcare IT", "Nursing"],
-      consultants: 32,
-      successRate: "91%"
+      image: "https://static.investindia.gov.in/s3fs-public/2023-11/Untitled-1%20%281%29.png?auto=compress&cs=tinysrgb&w=800",
+      specializations: ["Clinical Research", "Medical Devices", "Pharmaceuticals", "Healthcare IT", "Nursing"]
     },
     {
       id: 3,
@@ -41,14 +27,7 @@ const IndustryGrid = () => {
       icon: "TrendingUp",
       description: "Placing finance professionals in banking, investment, fintech, and insurance organizations worldwide.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "2,200+",
-        avgSalary: "$135K",
-        timeToHire: "16 days"
-      },
-      specializations: ["Investment Banking", "Risk Management", "Fintech", "Compliance", "Wealth Management"],
-      consultants: 38,
-      successRate: "96%"
+      specializations: ["Investment Banking", "Risk Management", "Fintech", "Compliance", "Wealth Management"]
     },
     {
       id: 4,
@@ -56,51 +35,14 @@ const IndustryGrid = () => {
       icon: "Settings",
       description: "Supporting manufacturing excellence through strategic placement of engineering and operations talent.",
       image: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "1,600+",
-        avgSalary: "$89K",
-        timeToHire: "25 days"
-      },
-      specializations: ["Mechanical Engineering", "Process Improvement", "Quality Assurance", "Supply Chain", "Automation"],
-      consultants: 28,
-      successRate: "89%"
-    },
-    {
-      id: 5,
-      name: "Marketing & Sales",
-      icon: "Megaphone",
-      description: "Building high-performing sales and marketing teams that drive revenue growth and brand success.",
-      image: "https://images.pixabay.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "1,900+",
-        avgSalary: "$92K",
-        timeToHire: "20 days"
-      },
-      specializations: ["Digital Marketing", "Sales Leadership", "Brand Management", "Growth Marketing", "Customer Success"],
-      consultants: 35,
-      successRate: "93%"
-    },
-    {
-      id: 6,
-      name: "Energy & Utilities",
-      icon: "Zap",
-      description: "Powering the future with renewable energy and traditional utility sector talent placement expertise.",
-      image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=compress&cs=tinysrgb&w=800",
-      stats: {
-        placements: "1,200+",
-        avgSalary: "$105K",
-        timeToHire: "28 days"
-      },
-      specializations: ["Renewable Energy", "Power Generation", "Grid Management", "Environmental Engineering", "Project Management"],
-      consultants: 22,
-      successRate: "87%"
+      specializations: ["Mechanical Engineering", "Process Improvement", "Quality Assurance", "Supply Chain", "Automation"]
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-brand-headline mb-6">
             Our Industry Expertise
           </h2>
@@ -130,10 +72,6 @@ const IndustryGrid = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">{industry?.name}</h3>
-                      <div className="flex items-center space-x-4 text-white/80 text-sm">
-                        <span>{industry?.consultants} Consultants</span>
-                        <span>{industry?.successRate} Success Rate</span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -144,20 +82,6 @@ const IndustryGrid = () => {
                   {industry?.description}
                 </p>
 
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">{industry?.stats?.placements}</div>
-                    <div className="text-xs text-muted-foreground">Placements</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">{industry?.stats?.avgSalary}</div>
-                    <div className="text-xs text-muted-foreground">Avg Salary</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">{industry?.stats?.timeToHire}</div>
-                    <div className="text-xs text-muted-foreground">Time to Hire</div>
-                  </div>
-                </div>
 
                 <div className="mb-6">
                   <h4 className="font-semibold text-foreground mb-3">Key Specializations</h4>

@@ -9,7 +9,7 @@ const ExecutiveSearch = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-20">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-14">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -30,7 +30,7 @@ const ExecutiveSearch = () => {
           </div>
         </section>
         {/* Executive Search Overview (text-focused for HR) */}
-        <section className="py-16">
+        <section className="py-12">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Executive Search Practice</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Confidential, data-driven leadership hiring</p>
@@ -90,9 +90,9 @@ const ExecutiveSearch = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Our Executive Search Process
               </h2>
