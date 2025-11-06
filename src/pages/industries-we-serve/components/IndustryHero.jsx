@@ -5,7 +5,7 @@ const IndustryHero = () => {
   return (
     <section className="relative bg-background overflow-hidden">
       <div className="absolute inset-0 north-arrow-bg opacity-10"></div>
-      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-20">
+      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-6 py-3 mb-6 text-primary">
             <Icon name="Building2" size={20} className="text-primary" />

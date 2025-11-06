@@ -9,7 +9,7 @@ const SeniorHiring = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-20">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -28,7 +28,7 @@ const SeniorHiring = () => {
           </div>
         </section>
         {/* Senior & Mid-Level Hiring Overview (text-focused) */}
-        <section className="py-12">
+        <section className="py-6">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Senior & Mid-Level Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">The engine room of your organization</p>
@@ -67,15 +67,21 @@ const SeniorHiring = () => {
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Where We Help Most: Powering Your Core Functions</h3>
             <div className="rounded-lg border border-border p-6 bg-muted/30 mb-6">
-              <p className="text-muted-foreground leading-relaxed mb-3">Northstep Global is adept at strengthening the foundational and
+              <p className="text-muted-foreground leading-relaxed mb-4">Northstep Global is adept at strengthening the foundational and
               growth-oriented functions of your organization. We are the trusted partner for:</p>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li><span className="font-medium text-foreground">Key Functional Hires:</span> From Sales, Product, and Engineering to
-                Finance, HR, Operations, and Customer functions, we deliver talent that drives immediate impact.</li>
-                <li><span className="font-medium text-foreground">Single Hires & Cohort Builds:</span> Whether it's filling a crucial
-                individual role or building entire teams for new locations, greenfield initiatives, or significant capability uplifts,
-                we scale our approach to your needs.</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Key Functional Hires:</span> From Sales, Product, and Engineering to
+                  Finance, HR, Operations, and Customer functions, we deliver talent that drives immediate impact.</p>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Single Hires & Cohort Builds:</span> Whether it's filling a crucial
+                  individual role or building entire teams for new locations, greenfield initiatives, or significant capability uplifts,
+                  we scale our approach to your needs.</p>
+                </div>
+              </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Let Northstep Global be your strategic partner in building robust, high-performing teams at the senior and mid-levels,
@@ -85,7 +91,7 @@ const SeniorHiring = () => {
         </section>
 
         {/* Role Categories */}
-        <section className="py-12 bg-muted/30">
+        <section className="py-6 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">

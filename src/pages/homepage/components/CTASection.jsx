@@ -13,10 +13,10 @@ const CTASection = () => {
     },
     {
       method: 'Email',
-      value: 'contact@northstep.com',
+      value: 'contact@north-step.com',
       icon: 'Mail',
       description: 'Send us your questions',
-      link: 'mailto:contact@northstep.com'
+      link: 'mailto:contact@north-step.com'
     },
     {
       method: 'Office',
@@ -28,7 +28,7 @@ const CTASection = () => {
   ];
 
   return (
-    <section className="py-10 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+    <section className="py-6 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         
         {/* Contact Information */}

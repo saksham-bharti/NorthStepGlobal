@@ -16,12 +16,12 @@ const TrustIndicators = () => {
   ];
 
   return (
-    <section className="py-10 bg-background">
+    <section className="py-6 bg-background">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Client Logos Carousel */}
-        <div className="mb-10">
+        <div className="mb-0">
           <h3 className="text-center text-lg font-semibold text-foreground mb-8">
-            Trusted by Leading Organizations
+            Comprehensive End-to-End Recruitment Solutions Across Industries
           </h3>
           <div className="overflow-hidden">
             <div className="flex animate-scroll space-x-12 items-center">

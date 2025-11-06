@@ -103,7 +103,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-background/80">
               <li>+91 98711 59600</li>
-              <li>contact@northstep.com</li>
+              <li>contact@north-step.com</li>
               <li> Noida, Uttar Pradesh </li>
             </ul>
           </div>

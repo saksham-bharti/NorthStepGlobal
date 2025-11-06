@@ -7,11 +7,11 @@ const IndustryGrid = () => {
   const industries = [
     {
       id: 1,
-      name: "Technology & Software",
+      name: "Building Material",
       icon: "Code",
-      description: "From startups to enterprise, we connect top tech talent with innovative companies driving digital transformation.",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      specializations: ["Software Engineering", "DevOps", "Data Science", "Cybersecurity", "Product Management"]
+      description: "From construction innovators to large suppliers, we connect top talent with companies shaping the future of sustainable & modern building.",
+      image: "https://structuralengineeringbasics.com/wp-content/uploads/2019/05/STRUCTURAL-ENGINEERING-MATERIALS-1024x530-1-1200x900.webp?auto=compress&cs=tinysrgb&w=800",
+      specializations: [ "Materials Engineering", "Sustainable Design", "Supply Chain", "Quality & Compliance", "Sales & Product Development"]
     },
     {
       id: 2,
@@ -40,9 +40,9 @@ const IndustryGrid = () => {
   ];
 
   return (
-    <section className="py-12 bg-background">
+    <section className="py-6 bg-background">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <h2 className="text-brand-headline mb-6">
             Our Industry Expertise
           </h2>

@@ -9,7 +9,7 @@ const GCCHiring = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-14">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -28,7 +28,7 @@ const GCCHiring = () => {
           </div>
         </section>
         {/* GCC Hiring Overview (text-focused) */}
-        <section className="py-12">
+        <section className="py-6">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Capability Centers (GCC) Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Powering Your Innovation Hubs</p>
@@ -70,18 +70,33 @@ const GCCHiring = () => {
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Where We Add Value in GCC Hiring</h3>
             <div className="rounded-lg border border-border p-6 bg-muted/30">
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li><span className="font-medium text-foreground">New GCC Establishment:</span> Sourcing core leadership teams and initial
-                talent cohorts to successfully launch greenfield capability centers.</li>
-                <li><span className="font-medium text-foreground">Expansion & Scale-Up:</span> Robust talent pipelines for rapid scaling of
-                existing GCCs, addressing increased demand or new functional mandates.</li>
-                <li><span className="font-medium text-foreground">Specialized Competency Hubs:</span> Recruiting niche experts to build out
-                specific Centers of Excellence (CoEs) that enhance innovation and service delivery.</li>
-                <li><span className="font-medium text-foreground">Leadership for Global Operations:</span> Securing experienced leaders to
-                manage large, complex teams and drive operational excellence within a global framework.</li>
-                <li><span className="font-medium text-foreground">Volume Hiring for Critical Functions:</span> Efficiently filling large volumes
-                of roles across software development, data science, back-office operations, and shared services.</li>
-              </ul>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">New GCC Establishment:</span> Sourcing core leadership teams and initial
+                  talent cohorts to successfully launch greenfield capability centers.</p>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Expansion & Scale-Up:</span> Robust talent pipelines for rapid scaling of
+                  existing GCCs, addressing increased demand or new functional mandates.</p>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Specialized Competency Hubs:</span> Recruiting niche experts to build out
+                  specific Centers of Excellence (CoEs) that enhance innovation and service delivery.</p>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Leadership for Global Operations:</span> Securing experienced leaders to
+                  manage large, complex teams and drive operational excellence within a global framework.</p>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Volume Hiring for Critical Functions:</span> Efficiently filling large volumes
+                  of roles across software development, data science, back-office operations, and shared services.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -63,20 +63,8 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center justify-center space-x-1 flex-1">
-            {/* Home */}
-            <Link
-              to="/homepage"
-              className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
-                isHomeActive
-                  ? 'bg-primary text-primary-foreground shadow-brand'
-                  : 'text-foreground hover:text-primary hover:bg-muted'
-              }`}
-            >
-              <Icon name="Home" size={16} />
-              Home
-            </Link>
-
+          <nav className="hidden lg:flex items-center justify-end space-x-1 flex-1">
+            
             {/* Services Dropdown */}
             <div className="relative group">
               <button className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover inline-flex items-center gap-2 whitespace-nowrap ${
@@ -115,7 +103,7 @@ const Header = () => {
               Industries
             </Link>
 
-            {/* Success Stories */}
+            {/* Contact us */}
             <Link
               to="/contact"
               className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
@@ -126,6 +114,19 @@ const Header = () => {
             >
               <Icon name="Mail" size={16} />
               Contact Us
+            </Link>
+
+            {/* Home */}
+            <Link
+              to="/homepage"
+              className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
+                isHomeActive
+                  ? 'bg-primary text-primary-foreground shadow-brand'
+                  : 'text-foreground hover:text-primary hover:bg-muted'
+              }`}
+            >
+              <Icon name="Home" size={16} />
+              Home
             </Link>
           </nav>
 
