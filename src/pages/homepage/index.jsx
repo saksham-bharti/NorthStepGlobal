@@ -3,10 +3,8 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import HeroSection from './components/HeroSection';
- 
 import TrustIndicators from './components/TrustIndicators';
 import CTASection from './components/CTASection';
-import Icon from '../../components/AppIcon';
 
 const Homepage = () => {
   useEffect(() => {

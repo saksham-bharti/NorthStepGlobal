@@ -9,7 +9,7 @@ const GCCHiring = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-20">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -28,123 +28,79 @@ const GCCHiring = () => {
           </div>
         </section>
         {/* GCC Hiring Overview (text-focused) */}
-        <section className="py-20">
+        <section className="py-6">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">GCC Hiring</h2>
-            <p className="text-sm uppercase tracking-wide text-primary mb-6">Unlocking Talent in the Arabian Gulf</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Capability Centers (GCC) Hiring</h2>
+            <p className="text-sm uppercase tracking-wide text-primary mb-6">Powering Your Innovation Hubs</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              The Gulf Cooperation Council (GCC) region represents a dynamic and rapidly evolving economic powerhouse, offering immense
-              opportunities alongside distinct talent acquisition challenges. At Northstep Global, we possess specialized expertise in
-              navigating the unique cultural, regulatory, and market nuances of hiring across the UAE, Saudi Arabia, Qatar, Bahrain,
-              Oman, and Kuwait. We are your trusted partner in identifying, attracting, and securing top-tier talent who not only possess
-              the requisite skills but also seamlessly integrate into the vibrant business ecosystems and diverse workforces of the GCC.
-              Our approach ensures you build robust, localized, and globally competitive teams essential for success in this thriving region.
+              Global Capability Centers (GCCs) are strategic innovation hubs, essential for driving efficiency, fostering specialized
+              expertise, and delivering global impact for multinational corporations. At Northstep Global, we understand the unique
+              talent requirements of building and scaling these vital centers. We specialize in identifying, attracting, and securing the
+              highly skilled professionals who form the backbone of successful GCC operations—from specialized technologists and
+              analytical experts to process innovators and functional leaders. Our expertise ensures you build a robust, high-performing
+              workforce capable of maximizing your GCC's strategic value, whether you're establishing a new center or expanding an
+              existing one.
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Our Specialized Approach to GCC Talent Acquisition</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">Our deep understanding of the GCC market allows for a highly
-              effective and culturally sensitive recruitment process:</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Our methodology is specifically designed to meet the precise and
+              often large-scale talent needs of Global Capability Centers:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Localized Market Intelligence</h4>
-                <p className="text-muted-foreground">Unparalleled insights into GCC talent availability, salary benchmarks, and
-                specific industry trends across sectors and nationalities within the region.</p>
+                <h4 className="font-semibold text-foreground mb-2">Strategic Talent Mapping for GCCs</h4>
+                <p className="text-muted-foreground">In-depth market intelligence on talent availability, salary benchmarks, and
+                specific skill concentrations aligned to your GCC mandate across target geographies.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Cultural & Regulatory Acumen</h4>
-                <p className="text-muted-foreground">Proficiency managing local labor laws, visa regulations, and cultural
-                considerations to ensure a compliant, smooth hiring journey for clients and candidates.</p>
+                <h4 className="font-semibold text-foreground mb-2">Specialized Skill Identification</h4>
+                <p className="text-muted-foreground">Focused sourcing for critical skills in IT, R&D, engineering, analytics,
+                finance, and other core functions vital for GCC success.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Extensive Regional Network</h4>
-                <p className="text-muted-foreground">A robust network across the GCC reaching passive and active candidates, including
-                expatriate talent and highly skilled local professionals (GCC nationals).</p>
+                <h4 className="font-semibold text-foreground mb-2">Scalable Recruitment Solutions</h4>
+                <p className="text-muted-foreground">Flexible models supporting both new-center ramp-ups and ongoing volume hiring,
+                adapting to your growth trajectory.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Efficient Cross-Border Logistics</h4>
-                <p className="text-muted-foreground">Streamlined interview scheduling across time zones, coordinated offer management,
-                and essential relocation support tailored for the GCC context.</p>
+                <h4 className="font-semibold text-foreground mb-2">Culture & Integration Focus</h4>
+                <p className="text-muted-foreground">Beyond skills, we prioritize culture alignment and collaboration readiness essential
+                for high-performing global capability center environments.</p>
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold text-foreground mb-4">Where We Add Value in the GCC Market</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Where We Add Value in GCC Hiring</h3>
             <div className="rounded-lg border border-border p-6 bg-muted/30">
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li><span className="font-medium text-foreground">Strategic Market Entry & Expansion:</span> Sourcing critical leadership
-                and functional teams for new operations or significant expansions within the GCC.</li>
-                <li><span className="font-medium text-foreground">Specialized Sector Expertise:</span> Talent solutions for key growth
-                sectors such as Finance, Technology, Energy, Construction, Healthcare, and Hospitality.</li>
-                <li><span className="font-medium text-foreground">Local National Talent Development:</span> Supporting "Nationalization"
-                initiatives by identifying and integrating highly capable GCC national talent.</li>
-                <li><span className="font-medium text-foreground">Executive & Mid-Level Appointments:</span> From C-suite leaders driving
-                regional strategy to skilled mid-level managers executing operations.</li>
-                <li><span className="font-medium text-foreground">Volume Hiring for Projects:</span> Efficiently scaling teams for large-scale
-                projects or new facility establishments within tight deadlines.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        {/* GCC Setup Process */}
-        <section className="py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                GCC Setup & Scaling Process
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our comprehensive approach supports organizations at every stage of their 
-                GCC journey, from initial setup to full-scale operations.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">1</span>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">New GCC Establishment:</span> Sourcing core leadership teams and initial
+                  talent cohorts to successfully launch greenfield capability centers.</p>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Strategy & Planning</h3>
-                <p className="text-muted-foreground">
-                  Defining GCC objectives, location selection, and organizational structure 
-                  to align with business goals.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">2</span>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Expansion & Scale-Up:</span> Robust talent pipelines for rapid scaling of
+                  existing GCCs, addressing increased demand or new functional mandates.</p>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Leadership Hiring</h3>
-                <p className="text-muted-foreground">
-                  Recruiting senior leadership team including Center Head, Function Heads, 
-                  and key management positions.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">3</span>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Specialized Competency Hubs:</span> Recruiting niche experts to build out
+                  specific Centers of Excellence (CoEs) that enhance innovation and service delivery.</p>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Team Building</h3>
-                <p className="text-muted-foreground">
-                  Scaling operations with mid-level managers, specialists, and operational 
-                  staff across all functions.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">4</span>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Leadership for Global Operations:</span> Securing experienced leaders to
+                  manage large, complex teams and drive operational excellence within a global framework.</p>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Optimization</h3>
-                <p className="text-muted-foreground">
-                  Continuous improvement through performance optimization, process refinement, 
-                  and strategic expansion.
-                </p>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Volume Hiring for Critical Functions:</span> Efficiently filling large volumes
+                  of roles across software development, data science, back-office operations, and shared services.</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+        </main>
       <Footer />
     </div>
   );

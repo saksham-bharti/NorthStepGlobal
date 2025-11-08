@@ -9,7 +9,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', path: '/homepage' },
     { name: 'Industries', path: '/industries-we-serve' },
-    { name: 'Success Stories', path: '/success-stories' },
+    { name: 'Contact Us', path: '/contact' },
   ];
 
   const servicesLinks = [
@@ -18,12 +18,6 @@ const Footer = () => {
     { name: 'International Hiring', path: '/services/International' },
     { name: 'RPO Solutions', path: '/services/RPO' },
     { name: 'GCC Hiring', path: '/services/GCCHiring' },
-  ];
-
-  const policyLinks = [
-    { name: 'Privacy Policy', path: '/privacy-policy' },
-    { name: 'Terms of Service', path: '/terms-of-service' },
-    { name: 'Cookie Policy', path: '/cookie-policy' },
   ];
 
   const isHomeActive = pathname === '/homepage' || pathname === '/';
@@ -42,17 +36,23 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-bold leading-none">NorthStep</h3>
-                <p className="text-sm sm:text-base lg:text-lg font-bold leading-none -mt-1 text-background/80">Global</p>
+                <h3 className="text-xs sm:text-sm md:text-base font-bold leading-tight sm:leading-none">NorthStep</h3>
+                <p className="text-xs sm:text-sm md:text-base font-bold leading-tight sm:leading-none -mt-0 sm:-mt-0.5 md:-mt-1 text-background/80">Global</p>
               </div>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
               Strategic talent partnerships that transform careers and organizations. Your next step north starts here.
             </p>
             <div className="flex space-x-4">
-              <Icon name="Linkedin" size={20} className="text-background/60 hover:text-background cursor-pointer" />
-              <Icon name="Twitter" size={20} className="text-background/60 hover:text-background cursor-pointer" />
-              <Icon name="Facebook" size={20} className="text-background/60 hover:text-background cursor-pointer" />
+              <a href="https://www.linkedin.com/in/northstep-global-7b1274397/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-background/60 hover:text-background">
+                <Icon name="Linkedin" size={20} />
+              </a>
+              <a href="https://www.instagram.com/northstepglobal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-background/60 hover:text-background">
+                <Icon name="Instagram" size={20} />
+              </a>
+              <a href="https://www.youtube.com/@northstep" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-background/60 hover:text-background">
+                <Icon name="Youtube" size={20} />
+              </a>
             </div>
           </div>
 
@@ -102,29 +102,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-background/80">
-              <li>+1 (555) 123-4567</li>
-              <li>hello@northstep.com</li>
-              <li>New York, NY</li>
+              <li>+91 98711 59600</li>
+              <li>contact@north-step.com</li>
+              <li> Noida, Uttar Pradesh </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-background/20 pt-8 flex flex-col lg:flex-row justify-between items-center">
           <p className="text-sm text-background/60">© {new Date()?.getFullYear()} NorthStep Global. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 lg:mt-0">
-            {policyLinks.map((l) => {
-              const isActive = pathname === l.path;
-              return isActive ? (
-                <span key={l.path} aria-current="page" className="text-background/60 cursor-default text-sm">
-                  {l.name}
-                </span>
-              ) : (
-                <Link key={l.path} to={l.path} className="text-background/60 hover:text-primary text-sm transition-colors">
-                  {l.name}
-                </Link>
-              );
-            })}
-          </div>
         </div>
       </div>
     </footer>
@@ -132,5 +118,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

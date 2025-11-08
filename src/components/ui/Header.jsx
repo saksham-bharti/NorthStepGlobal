@@ -10,7 +10,7 @@ const Header = () => {
   const navigationItems = [
     { name: 'Home', path: '/homepage', icon: 'Home' },
     { name: 'Industries', path: '/industries-we-serve', icon: 'Building2' },
-    { name: 'Success Stories', path: '/success-stories', icon: 'Trophy' },
+    { name: 'Contact Us', path: '/contact', icon: 'Mail' },
   ];
 
   const servicesItems = [
@@ -53,30 +53,18 @@ const Header = () => {
               </div>
             </div>
             <div>
-              <h1 className="text-sm sm:text-base lg:text-lg font-bold leading-none text-foreground">
+              <h1 className="text-xs sm:text-sm md:text-base font-bold leading-tight sm:leading-none text-foreground">
                 NorthStep
               </h1>
-              <p className="text-sm sm:text-base lg:text-lg font-bold leading-none text-foreground -mt-2">
+              <p className="text-xs sm:text-sm md:text-base font-bold leading-tight sm:leading-none text-foreground -mt-0 sm:-mt-0.5 md:-mt-1">
                 Global
               </p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center justify-center space-x-1 flex-1">
-            {/* Home */}
-            <Link
-              to="/homepage"
-              className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
-                isHomeActive
-                  ? 'bg-primary text-primary-foreground shadow-brand'
-                  : 'text-foreground hover:text-primary hover:bg-muted'
-              }`}
-            >
-              <Icon name="Home" size={16} />
-              Home
-            </Link>
-
+          <nav className="hidden lg:flex items-center justify-end space-x-1 flex-1">
+            
             {/* Services Dropdown */}
             <div className="relative group">
               <button className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover inline-flex items-center gap-2 whitespace-nowrap ${
@@ -115,17 +103,30 @@ const Header = () => {
               Industries
             </Link>
 
-            {/* Success Stories */}
+            {/* Contact us */}
             <Link
-              to="/success-stories"
+              to="/contact"
               className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
-                isActivePath('/success-stories')
+                isActivePath('/contact')
                   ? 'bg-primary text-primary-foreground shadow-brand'
                   : 'text-foreground hover:text-primary hover:bg-muted'
               }`}
             >
-              <Icon name="Trophy" size={16} />
-              Success Stories
+              <Icon name="Mail" size={16} />
+              Contact Us
+            </Link>
+
+            {/* Home */}
+            <Link
+              to="/homepage"
+              className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
+                isHomeActive
+                  ? 'bg-primary text-primary-foreground shadow-brand'
+                  : 'text-foreground hover:text-primary hover:bg-muted'
+              }`}
+            >
+              <Icon name="Home" size={16} />
+              Home
             </Link>
           </nav>
 

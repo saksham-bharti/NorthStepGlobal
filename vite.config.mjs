@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
     outDir: "build",
     chunkSizeWarningLimit: 2000,
+    sourcemap: false, // Disable source maps in production to hide file names
   },
   plugins: [tsconfigPaths(), react(), tagger()],
   server: {
