@@ -1,8 +1,8 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Icon from '../../../components/AppIcon';
 
 const TrustIndicators = () => {
-
   const clientLogos = [
     { name: 'Building Material' },
     { name: 'Real Estate' },
@@ -15,39 +15,85 @@ const TrustIndicators = () => {
     { name: 'Professional services' }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <section className="py-6 bg-background">
+    <motion.section
+      className="py-6 bg-background"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+    >
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Client Logos Carousel */}
         <div className="mb-0">
-          <h3 className="text-center text-lg font-semibold text-foreground mb-8">
+          <motion.h3
+            className="text-center text-heading-lg text-foreground mb-8"
+            variants={itemVariants}
+          >
             Comprehensive End-to-End Recruitment Solutions Across Industries
-          </h3>
-          <div className="overflow-hidden">
-            <div className="flex animate-scroll space-x-12 items-center">
+          </motion.h3>
+          <motion.div
+            className="overflow-hidden"
+            variants={itemVariants}
+          >
+            <motion.div
+              className="flex animate-scroll space-x-12 items-center"
+              whileHover={{ animationPlayState: "paused" }}
+              transition={{ duration: 0.3 }}
+            >
               {[...clientLogos, ...clientLogos]?.map((client, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="flex-shrink-0 group"
+                  variants={itemVariants}
+                  whileHover={{
+                    scale: 1.05,
+                    transition: { duration: 0.2 }
+                  }}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-32 h-16 bg-card rounded-lg border border-border flex items-center justify-center p-4 group-hover:shadow-lg transition-shadow duration-300">
-                    <div className="w-full h-full bg-muted rounded flex items-center justify-center">
-                      <span className="text-xs font-medium text-muted-foreground text-center">
+                  <div className="w-32 h-16 bg-card rounded-lg border border-border flex items-center justify-center p-4 group-hover:shadow-lg transition-all duration-300">
+                    <div className="w-full h-full bg-muted rounded flex items-center justify-center group-hover:bg-primary/5 transition-colors duration-300">
+                      <span className="text-ui-xs font-medium text-muted-foreground text-center group-hover:text-primary transition-colors duration-300">
                         {client?.name}
                       </span>
                     </div>
                   </div>
                   {client?.industry && (
                     <div className="text-center mt-2">
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-ui-xs text-muted-foreground">
                         {client?.industry}
                       </span>
                     </div>
                   )}
-                </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
       <style jsx>{`
@@ -63,7 +109,7 @@ const TrustIndicators = () => {
           animation: scroll 30s linear infinite;
         }
       `}</style>
-    </section>
+    </motion.section>
   );
 };
 

@@ -9,19 +9,19 @@ const RPO = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-6 pb-0">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-ui-sm mb-6">
                 <Icon name="Settings" size={16} />
                 Recruitment Process Outsourcing
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-display-lg lg:text-display-xl text-foreground mb-6">
                 Transform Your Recruitment Operations
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Partner with us to outsource your entire recruitment process and gain access to 
-                scalable, technology-driven talent acquisition solutions that deliver superior 
+              <p className="text-body-xl text-muted-foreground mb-8">
+                Partner with us to outsource your entire recruitment process and gain access to
+                scalable, technology-driven talent acquisition solutions that deliver superior
                 results while reducing costs and time-to-hire.
               </p>
             </div>
@@ -29,11 +29,11 @@ const RPO = () => {
         </section>
 
         {/* RPO Overview (text-focused for HR) */}
-        <section className="py-6">
+        <section className="py-4">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
-            <p className="text-sm uppercase tracking-wide text-primary mb-6">Scalable talent, seamless integration</p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <h2 className="text-heading-2xl text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
+            <p className="text-ui-xs uppercase tracking-wide text-primary mb-6">Scalable talent, seamless integration</p>
+            <p className="text-body-lg text-muted-foreground mb-8">
               In today's competitive talent landscape, managing recruitment surges, specialized hiring, or continuous talent acquisition
               can stretch internal resources thin. Northstep Global's Recruitment Process Outsourcing (RPO) offers a strategic solution,
               empowering your organization to scale hiring effectively with a partner fully embedded within your brand, tools, and unique
@@ -44,8 +44,8 @@ const RPO = () => {
               objectives without the burden of bloating your fixed costs.
             </p>
 
-            <h3 className="text-xl font-semibold text-foreground mb-4">What We Take Off Your Plate: Comprehensive RPO Solutions</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">Our RPO services are designed to absorb recruitment complexities,
+            <h3 className="text-heading-lg text-foreground mb-4">What We Take Off Your Plate: Comprehensive RPO Solutions</h3>
+            <p className="text-body-md text-muted-foreground mb-3">Our RPO services are designed to absorb recruitment complexities,
               allowing your internal teams to focus on core strategic HR initiatives:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">

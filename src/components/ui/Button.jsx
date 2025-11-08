@@ -2,6 +2,7 @@ import React from 'react';
 import { Slot } from "@radix-ui/react-slot";
 import { cva } from "class-variance-authority";
 import { cn } from "../../utils/cn";
+import { motion } from 'framer-motion';
 import Icon from '../AppIcon';
 
 const buttonVariants = cva(
@@ -49,7 +50,7 @@ const Button = React.forwardRef(({
     disabled = false,
     ...props
 }, ref) => {
-    const Comp = asChild ? Slot : "button";
+    const Comp = asChild ? Slot : motion.button;
 
     // Icon size mapping based on button size
     const iconSizeMap = {
@@ -63,26 +64,37 @@ const Button = React.forwardRef(({
 
     const calculatedIconSize = iconSize || iconSizeMap?.[size] || 16;
 
-    // Loading spinner
+    // Loading spinner with animation
     const LoadingSpinner = () => (
-        <svg className="animate-spin -ml-1 mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24">
+        <motion.svg
+            className="animate-spin -ml-1 mr-2 h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+        >
             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 714 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-        </svg>
+        </motion.svg>
     );
 
     const renderIcon = () => {
         if (!iconName) return null;
         try {
             return (
-                <Icon
-                    name={iconName}
-                    size={calculatedIconSize}
-                    className={cn(
-                        children && iconPosition === 'left' && "mr-2",
-                        children && iconPosition === 'right' && "ml-2"
-                    )}
-                />
+                <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.2 }}
+                >
+                    <Icon
+                        name={iconName}
+                        size={calculatedIconSize}
+                        className={cn(
+                            children && iconPosition === 'left' && "mr-2",
+                            children && iconPosition === 'right' && "ml-2"
+                        )}
+                    />
+                </motion.div>
             );
         } catch {
             return null;
@@ -90,20 +102,29 @@ const Button = React.forwardRef(({
     };
 
     const renderFallbackButton = () => (
-        <button
+        <motion.button
             className={cn(
                 buttonVariants({ variant, size, className }),
                 fullWidth && "w-full"
             )}
             ref={ref}
             disabled={disabled || loading}
+            whileHover={{
+                scale: disabled || loading ? 1 : 1.02,
+                y: disabled || loading ? 0 : -1
+            }}
+            whileTap={{
+                scale: disabled || loading ? 1 : 0.98,
+                y: disabled || loading ? 0 : 1
+            }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
             {...props}
         >
             {loading && <LoadingSpinner />}
             {iconName && iconPosition === 'left' && renderIcon()}
             {children}
             {iconName && iconPosition === 'right' && renderIcon()}
-        </button>
+        </motion.button>
     );
 
     // When asChild is true, merge icons into the child element
@@ -151,6 +172,15 @@ const Button = React.forwardRef(({
             )}
             ref={ref}
             disabled={disabled || loading}
+            whileHover={{
+                scale: disabled || loading ? 1 : 1.02,
+                y: disabled || loading ? 0 : -1
+            }}
+            whileTap={{
+                scale: disabled || loading ? 1 : 0.98,
+                y: disabled || loading ? 0 : 1
+            }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
             {...props}
         >
             {loading && <LoadingSpinner />}

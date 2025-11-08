@@ -9,7 +9,7 @@ const SeniorHiring = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-6 pb-0">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -28,7 +28,7 @@ const SeniorHiring = () => {
           </div>
         </section>
         {/* Senior & Mid-Level Hiring Overview (text-focused) */}
-        <section className="py-6">
+        <section className="py-4">
           <div className="max-w-5xl mx-auto px-4 lg:px-0">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Senior & Mid-Level Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">The engine room of your organization</p>
@@ -91,7 +91,7 @@ const SeniorHiring = () => {
         </section>
 
         {/* Role Categories */}
-        <section className="py-6 bg-muted/30">
+        <section className="py-5 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">

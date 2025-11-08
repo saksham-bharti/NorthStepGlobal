@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Icon from '../../components/AppIcon';
@@ -38,13 +39,13 @@ const OfficeLocations = () => {
     const selectedOfficeData = offices.find(office => office.id === selectedOffice);
 
     return (
-        <div className="py-6 lg:py-8 bg-background">
+        <div className="py-4 lg:py-6 bg-background">
             <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                <div className="text-center mb-6">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">
+                <div className="text-center mb-4">
+                    <h2 className="text-heading-2xl text-foreground mb-3">
                         Visit Our Offices
                     </h2>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                    <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
                         Meet our team in person at one of our locations.
                     </p>
                 </div>
@@ -52,7 +53,7 @@ const OfficeLocations = () => {
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Office Selector */}
                     <div className="space-y-4">
-                        <h3 className="text-xl font-semibold text-foreground mb-4">Our Locations</h3>
+                        <h3 className="text-heading-md text-foreground mb-4">Our Locations</h3>
                         {offices.map((office) => (
                             <button
                                 key={office.id}
@@ -70,9 +71,9 @@ const OfficeLocations = () => {
                                         <Icon name="MapPin" size={20} color="white" />
                                     </div>
                                     <div className="flex-1">
-                                        <h4 className="font-semibold text-foreground">{office.name}</h4>
-                                        <p className="text-sm text-muted-foreground">{office.type}</p>
-                                        <p className="text-sm text-muted-foreground mt-1">{office.city}</p>
+                                        <h4 className="text-ui-md font-semibold text-foreground">{office.name}</h4>
+                                        <p className="text-ui-sm text-muted-foreground">{office.type}</p>
+                                        <p className="text-ui-sm text-muted-foreground mt-1">{office.city}</p>
                                     </div>
                                     {selectedOffice === office.id && (
                                         <Icon name="ChevronRight" size={20} color="var(--color-primary)" />
@@ -90,8 +91,8 @@ const OfficeLocations = () => {
                                 <div className="bg-card rounded-xl p-6 border border-border">
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
-                                            <h3 className="text-2xl font-bold text-foreground">{selectedOfficeData.name}</h3>
-                                            <p className="text-muted-foreground">{selectedOfficeData.type}</p>
+                                            <h3 className="text-heading-lg text-foreground">{selectedOfficeData.name}</h3>
+                                            <p className="text-body-sm text-muted-foreground">{selectedOfficeData.type}</p>
                                         </div>
                                         <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
                                             selectedOfficeData.id === 'headquarters' ? 'bg-primary' : 'bg-blue-500'
@@ -208,15 +209,15 @@ const ContactPage = () => {
             <div className="min-h-screen bg-background">
                 <Header />
                 <main className="pt-16">
-                    <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+                    <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-6">
                         <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
                             <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary">
                                 <Icon name="Phone" size={16} />
-                                <span className="text-sm font-medium">Contact Us</span>
+                                <span className="text-ui-sm">Contact Us</span>
                             </div>
-                            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">Get in Touch with Northstep Global</h1>
+                            <h1 className="text-display-lg lg:text-display-xl text-foreground mb-6">Get in Touch with Northstep Global</h1>
                             <div className="max-w-4xl mx-auto space-y-3">
-                                <p className="text-xl text-muted-foreground">
+                                <p className="text-body-xl text-muted-foreground">
                                     Ready to elevate your talent strategy to expand your team? We are here to help.
                                 </p>
                             </div>

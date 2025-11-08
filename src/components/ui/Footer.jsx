@@ -44,15 +44,15 @@ const Footer = () => {
               Strategic talent partnerships that transform careers and organizations. Your next step north starts here.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/northstep-global-7b1274397/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-background/60 hover:text-background">
+              {/* <a href="https://www.linkedin.com/in/northstep-global-7b1274397/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-background/60 hover:text-background"> */}
                 <Icon name="Linkedin" size={20} />
-              </a>
+              {/* </a> */}
               <a href="https://www.instagram.com/northstepglobal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-background/60 hover:text-background">
                 <Icon name="Instagram" size={20} />
               </a>
-              <a href="https://www.youtube.com/@northstep" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-background/60 hover:text-background">
+              {/* <a href="https://www.youtube.com/@northstep" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-background/60 hover:text-background"> */}
                 <Icon name="Youtube" size={20} />
-              </a>
+              {/* </a> */}
             </div>
           </div>
 
