@@ -62,6 +62,35 @@ export default {
         accent: ['Playfair Display', 'serif']
       },
       fontSize: {
+        // Display sizes for hero sections
+        'display-2xl': ['4.5rem', { lineHeight: '1.05', fontWeight: '700' }],
+        'display-xl': ['3.75rem', { lineHeight: '1.05', fontWeight: '700' }],
+        'display-lg': ['3rem', { lineHeight: '1.1', fontWeight: '700' }],
+        'display-md': ['2.25rem', { lineHeight: '1.15', fontWeight: '700' }],
+        'display-sm': ['1.875rem', { lineHeight: '1.2', fontWeight: '700' }],
+
+        // Heading sizes
+        'heading-2xl': ['2.5rem', { lineHeight: '1.2', fontWeight: '600' }],
+        'heading-xl': ['2rem', { lineHeight: '1.25', fontWeight: '600' }],
+        'heading-lg': ['1.75rem', { lineHeight: '1.3', fontWeight: '600' }],
+        'heading-md': ['1.5rem', { lineHeight: '1.35', fontWeight: '600' }],
+        'heading-sm': ['1.25rem', { lineHeight: '1.4', fontWeight: '600' }],
+        'heading-xs': ['1.125rem', { lineHeight: '1.45', fontWeight: '600' }],
+
+        // Body text sizes
+        'body-xl': ['1.25rem', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.7', fontWeight: '400' }],
+        'body-md': ['1rem', { lineHeight: '1.7', fontWeight: '400' }],
+        'body-sm': ['0.875rem', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-xs': ['0.75rem', { lineHeight: '1.5', fontWeight: '400' }],
+
+        // UI text sizes
+        'ui-lg': ['1.125rem', { lineHeight: '1.4', fontWeight: '500' }],
+        'ui-md': ['1rem', { lineHeight: '1.4', fontWeight: '500' }],
+        'ui-sm': ['0.875rem', { lineHeight: '1.4', fontWeight: '500' }],
+        'ui-xs': ['0.75rem', { lineHeight: '1.4', fontWeight: '500' }],
+
+        // Legacy brand sizes (to be phased out)
         'brand-hero': ['3.5rem', { lineHeight: '1.1', fontWeight: '700' }],
         'brand-headline': ['2.25rem', { lineHeight: '1.2', fontWeight: '600' }],
         'brand-subheading': ['1.25rem', { lineHeight: '1.4', fontWeight: '500' }]
@@ -112,6 +141,45 @@ export default {
         xs: '2px'
       }
     },
+    typography: {
+      // Typography scale classes
+      DEFAULT: {
+        css: {
+          h1: {
+            fontSize: '2.5rem',
+            fontWeight: '600',
+            lineHeight: '1.2',
+            marginBottom: '1rem'
+          },
+          h2: {
+            fontSize: '2rem',
+            fontWeight: '600',
+            lineHeight: '1.25',
+            marginBottom: '0.875rem'
+          },
+          h3: {
+            fontSize: '1.75rem',
+            fontWeight: '600',
+            lineHeight: '1.3',
+            marginBottom: '0.75rem'
+          },
+          h4: {
+            fontSize: '1.5rem',
+            fontWeight: '600',
+            lineHeight: '1.35',
+            marginBottom: '0.625rem'
+          },
+          p: {
+            fontSize: '1rem',
+            lineHeight: '1.7',
+            marginBottom: '1rem'
+          },
+          'p:last-child': {
+            marginBottom: '0'
+          }
+        }
+      }
+    }
   },
   plugins: [forms, animate],
 }
