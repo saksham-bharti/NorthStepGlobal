@@ -29,17 +29,14 @@ const CTASection = () => {
 
   return (
     <section className="py-6 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        
+      <div className="max-w-5xl mx-auto px-4 lg:px-0">
+
         {/* Contact Information */}
         <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-2">
+            <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Get in Touch
             </h3>
-            <p className="text-muted-foreground">
-              Multiple ways to connect with our team of recruitment experts
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -54,13 +51,13 @@ const CTASection = () => {
                 <div className="w-16 h-16 bg-gradient-elevation-subtle rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Icon name={contact?.icon} size={24} className="text-primary" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-1">
+                <h4 className="text-xl font-semibold text-foreground mb-2">
                   {contact?.method}
                 </h4>
-                <p className="text-primary font-medium mb-2 group-hover:underline transition-all duration-200">
+                <p className="text-[17px] text-primary font-medium mb-2 group-hover:underline transition-all duration-200">
                   {contact?.value}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-[17px] text-muted-foreground leading-relaxed">
                   {contact?.description}
                 </p>
               </a>
@@ -84,11 +81,11 @@ const CTASection = () => {
         {/* Final Message */}
         <div className="mt-10 text-center">
           <div className="max-w-2xl mx-auto">
-            <p className="text-lg text-foreground font-medium mb-4">
+            <p className="text-xl font-semibold text-foreground mb-4">
               "Your next breakthrough is just one conversation away."
             </p>
-            <p className="text-muted-foreground">
-              Join the thousands of professionals and companies who have transformed their futures with NorthStep. 
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Join the thousands of professionals and companies who have transformed their futures with NorthStep.
               Let's discuss how we can help you achieve your goals.
             </p>
           </div>
