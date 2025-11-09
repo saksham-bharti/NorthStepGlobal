@@ -49,7 +49,7 @@ const HeroSection = () => {
           <motion.div
             className="relative h-56 sm:h-72 md:h-[60vh] lg:h-[70vh] rounded-2xl overflow-hidden"
             variants={itemVariants}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.006 }}   //image transition
             transition={{ duration: 0.3 }}
           >
             {/* Background Image */}

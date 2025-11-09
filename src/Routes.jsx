@@ -17,28 +17,28 @@ import GCCHiring from './pages/services/GCCHiring';
 const AnimatedRoutes = () => {
   const location = useLocation();
 
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      y: 20,
-      scale: 0.98
-    },
-    in: {
-      opacity: 1,
-      y: 0,
-      scale: 1
-    },
-    out: {
-      opacity: 0,
-      y: -20,
-      scale: 0.98
-    }
-  };
+  // const pageVariants = {
+  //   initial: {
+  //     opacity: 0,
+  //     y: 20,
+  //     scale: 0.98
+  //   },
+  //   in: {
+  //     opacity: 1,
+  //     y: 0,
+  //     scale: 1
+  //   },
+  //   out: {
+  //     opacity: 0,
+  //     y: -20,
+  //     scale: 0.98
+  //   }
+  // };
 
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 0.4
+    // duration: 0.4
   };
 
   return (
@@ -48,8 +48,8 @@ const AnimatedRoutes = () => {
         initial="initial"
         animate="in"
         exit="out"
-        variants={pageVariants}
-        transition={pageTransition}
+        // variants={pageVariants}
+        // transition={pageTransition}
         className="min-h-screen"
       >
         <RouterRoutes location={location}>
