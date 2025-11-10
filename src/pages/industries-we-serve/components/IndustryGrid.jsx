@@ -9,7 +9,7 @@ const IndustryGrid = () => {
       id: 1,
       name: "Building Material",
       icon: "Code",
-      description: "From construction innovators to large suppliers, we connect top talent with companies shaping the future of sustainable & modern building.",
+      description: "We connect top talent with companies pioneering the future of sustainable and modern building.",
       image: "https://structuralengineeringbasics.com/wp-content/uploads/2019/05/STRUCTURAL-ENGINEERING-MATERIALS-1024x530-1-1200x900.webp?auto=compress&cs=tinysrgb&w=800",
       specializations: [ "Materials Engineering", "Sustainable Design", "Supply Chain", "Quality & Compliance", "Sales & Product Development"]
     },
@@ -27,7 +27,7 @@ const IndustryGrid = () => {
       icon: "TrendingUp",
       description: "Placing finance professionals in banking, investment, fintech, and insurance organizations worldwide.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=compress&cs=tinysrgb&w=800",
-      specializations: ["Investment Banking", "Risk Management", "Fintech", "Compliance", "Wealth Management"]
+      specializations: ["Investment Banking", "Risk Management", "Wealth Management", "Fintech", "Compliance"]
     },
     {
       id: 4,
@@ -41,17 +41,7 @@ const IndustryGrid = () => {
 
   return (
     <section className="py-6 bg-background">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="text-center mb-6">
-          <h2 className="text-brand-headline mb-6">
-            Our Industry Expertise
-          </h2>
-          <p className="text-brand-subheading max-w-3xl mx-auto">
-            Deep sector knowledge combined with proven recruitment methodologies 
-            delivers exceptional results across diverse industries.
-          </p>
-        </div>
-
+      <div className="max-w-7xl mx-auto px-4 lg:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {industries?.slice(0, 4).map((industry) => (
             <div 
@@ -78,18 +68,18 @@ const IndustryGrid = () => {
               </div>
 
               <div className="p-6">
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-[17px] text-muted-foreground leading-relaxed mb-2">
                   {industry?.description}
                 </p>
 
 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-foreground mb-3">Key Specializations</h4>
+                  <h4 className="text-xl font-semibold text-foreground mb-4">Key Specializations</h4>
                   <div className="flex flex-wrap gap-2">
                     {industry?.specializations?.map((spec, index) => (
                       <span 
                         key={index}
-                        className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full"
+                        className="px-3 py-1 bg-muted text-muted-foreground text-[16px] rounded-full"
                       >
                         {spec}
                       </span>

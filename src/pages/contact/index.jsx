@@ -41,7 +41,7 @@ const OfficeLocations = () => {
         <div className="py-6 lg:py-8 bg-background">
             <div className="max-w-7xl mx-auto px-4 lg:px-8">
                 <div className="text-center mb-6">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3">
                         Visit Our Offices
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -186,7 +186,7 @@ const OfficeLocations = () => {
                 {/* Bottom Content - Full Width */}
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 mt-8">
                     <div className="text-center space-y-3">
-                        <p className="text-muted-foreground max-w-4xl mx-auto">
+                        <p className="text-muted-foreground max-w-4xl mx-auto leading-relaxed">
                             At Northstep Global, we partner with companies to solve their most critical talent challenges, from executive searches to building high-performing GCCs. Our team is eager to connect and discuss your unique needs. Reach out to us today to discover how Northstep Global can be your strategic partner in achieving unparalleled success.
                         </p>
                         <p className="text-muted-foreground">Let's build your future, together.</p>
@@ -214,9 +214,9 @@ const ContactPage = () => {
                                 <Icon name="Phone" size={16} />
                                 <span className="text-sm font-medium">Contact Us</span>
                             </div>
-                            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">Get in Touch with Northstep Global</h1>
+                            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">Get in Touch with Northstep Global</h1>
                             <div className="max-w-4xl mx-auto space-y-3">
-                                <p className="text-xl text-muted-foreground">
+                                <p className="text-brand-subheading">
                                     Ready to elevate your talent strategy to expand your team? We are here to help.
                                 </p>
                             </div>
