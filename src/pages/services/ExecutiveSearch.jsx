@@ -19,7 +19,7 @@ const ExecutiveSearch = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
                 Discover Hidden Executive Talent
               </h1>
-              <p className="text-brand-subheading mb-8">
+              <p className="text-brand-subheading">
                 An innovative approach to finding key individuals who are not
                 visible in the marketplace and not actively looking for career
                 changes. We uncover exceptional leaders who drive
@@ -31,7 +31,7 @@ const ExecutiveSearch = () => {
         </section>
         {/* Executive Search Overview (text-focused for HR) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Executive Search Practice</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Confidential, data-driven leadership hiring</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

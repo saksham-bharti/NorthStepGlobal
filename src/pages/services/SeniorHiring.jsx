@@ -19,7 +19,7 @@ const SeniorHiring = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
                 Strategic Talent Acquisition for Leadership Roles
               </h1>
-              <p className="text-brand-subheading mb-8">
+              <p className="text-brand-subheading">
                 We specialize in identifying and placing senior and mid-level professionals who bring
                 strategic value, leadership capabilities, and industry expertise to drive your
                 organization's growth and success.
@@ -29,7 +29,7 @@ const SeniorHiring = () => {
         </section>
         {/* Senior & Mid-Level Hiring Overview (text-focused) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Senior & Mid-Level Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">The engine room of your organization</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

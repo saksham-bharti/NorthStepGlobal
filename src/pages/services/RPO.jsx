@@ -19,7 +19,7 @@ const RPO = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
                 Transform Your Recruitment Operations
               </h1>
-              <p className="text-brand-subheading mb-8">
+              <p className="text-brand-subheading mb-2">
                 Partner with us to outsource your entire recruitment process and gain access to
                 scalable, technology-driven talent acquisition solutions that deliver superior
                 results while reducing costs and time-to-hire.
@@ -30,7 +30,7 @@ const RPO = () => {
 
         {/* RPO Overview (text-focused for HR) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Scalable talent, seamless integration</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

@@ -10,6 +10,7 @@ const Header = () => {
   const navigationItems = [
     { name: 'Home', path: '/homepage', icon: 'Home' },
     { name: 'Industries', path: '/industries-we-serve', icon: 'Building2' },
+    { name: 'About Us', path: '/about', icon: 'Users' },
     { name: 'Contact Us', path: '/contact', icon: 'Mail' },
   ];
 
@@ -70,6 +71,7 @@ const Header = () => {
               <button className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover inline-flex items-center gap-2 whitespace-nowrap ${
                 isInServices ? 'bg-primary text-primary-foreground shadow-brand' : 'text-foreground hover:text-primary hover:bg-muted'
               }`}>
+                <Icon name="Briefcase" size={16} />
                 <span>Services</span>
                 <Icon name="ChevronDown" size={16} />
               </button>
@@ -101,6 +103,19 @@ const Header = () => {
             >
               <Icon name="Building2" size={16} />
               Industries
+            </Link>
+
+            {/* About Us */}
+            <Link
+              to="/about"
+              className={`px-3 lg:px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 elevation-hover whitespace-nowrap inline-flex items-center gap-2 ${
+                isActivePath('/about')
+                  ? 'bg-primary text-primary-foreground shadow-brand'
+                  : 'text-foreground hover:text-primary hover:bg-muted'
+              }`}
+            >
+              <Icon name="Users" size={16} />
+              About Us
             </Link>
 
             {/* Contact us */}

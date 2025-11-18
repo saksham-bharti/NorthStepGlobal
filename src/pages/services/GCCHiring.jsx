@@ -19,17 +19,15 @@ const GCCHiring = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
                 Global Capability Centers Excellence
               </h1>
-              <p className="text-brand-subheading mb-8">
-                Specialized recruitment for Global Capability Centers (GCCs) and Global In-house Centers (GICs).
-                We understand the unique requirements of setting up and scaling offshore delivery centers
-                with world-class talent across technology, finance, and business operations.
+              <p className="text-brand-subheading mb-2">
+              Specialized recruitment for GCCs and GICs, delivering top-tier talent for technology, finance, and business operations.
               </p>
             </div>
           </div>
         </section>
         {/* GCC Hiring Overview (text-focused) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Capability Centers (GCC) Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Powering Your Innovation Hubs</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

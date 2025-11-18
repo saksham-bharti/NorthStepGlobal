@@ -11,7 +11,7 @@ const OfficeLocations = () => {
     const offices = [
         {
             id: 'headquarters',
-            name: 'Headquarters',
+            name: 'Corporate Office',
             type: 'Main Office',
             address: 'CoWorkZen 6th Floor, Alphathum, Tower C, Sector 90',
             city: 'Noida, Uttar Pradesh 201304',
@@ -19,7 +19,7 @@ const OfficeLocations = () => {
             email: 'contact@north-step.com',
             hours: 'Mon-Sat: 9:00 AM - 7:00 PM IST',
             coordinates: '28.5132195,77.4079183',
-            description: 'Our headquarters featuring executive recruitment, career counseling, and strategic consulting services.',
+            description: 'Our Office featuring executive recruitment, career counseling, and strategic consulting services.',
         },
         {
             id: 'registered',
@@ -71,8 +71,8 @@ const OfficeLocations = () => {
                                     </div>
                                     <div className="flex-1">
                                         <h4 className="font-semibold text-foreground">{office.name}</h4>
-                                        <p className="text-sm text-muted-foreground">{office.type}</p>
-                                        <p className="text-sm text-muted-foreground mt-1">{office.city}</p>
+                                        <p className="text-[15px] text-muted-foreground">{office.type}</p>
+                                        <p className="text-[15px] text-muted-foreground mt-1">{office.city}</p>
                                     </div>
                                     {selectedOffice === office.id && (
                                         <Icon name="ChevronRight" size={20} color="var(--color-primary)" />
@@ -91,7 +91,7 @@ const OfficeLocations = () => {
                                     <div className="flex items-start justify-between mb-4">
                                         <div>
                                             <h3 className="text-2xl font-bold text-foreground">{selectedOfficeData.name}</h3>
-                                            <p className="text-muted-foreground">{selectedOfficeData.type}</p>
+                                            <p className="text-[15px] text-muted-foreground">{selectedOfficeData.type}</p>
                                         </div>
                                         <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
                                             selectedOfficeData.id === 'headquarters' ? 'bg-primary' : 'bg-blue-500'
@@ -100,7 +100,7 @@ const OfficeLocations = () => {
                                         </div>
                                     </div>
 
-                                    <p className="text-muted-foreground mb-6">{selectedOfficeData.description}</p>
+                                    <p className="text-[16px] text-muted-foreground mb-6">{selectedOfficeData.description}</p>
 
                                     {/* Contact Info */}
                                     <div className="grid md:grid-cols-2 gap-4">
@@ -109,7 +109,7 @@ const OfficeLocations = () => {
                                                 <Icon name="MapPin" size={18} color="var(--color-primary)" />
                                                 <div>
                                                     <p className="text-sm font-medium text-foreground">{selectedOfficeData.address}</p>
-                                                    <p className="text-sm text-muted-foreground">{selectedOfficeData.city}</p>
+                                                    <p className="text-[15px] text-muted-foreground">{selectedOfficeData.city}</p>
                                                 </div>
                                             </div>
 
@@ -130,14 +130,14 @@ const OfficeLocations = () => {
                                                 className="flex items-center space-x-3 group cursor-pointer"
                                             >
                                                 <Icon name="Mail" size={18} color="var(--color-primary)" />
-                                                <p className="text-sm text-foreground group-hover:text-primary transition-colors duration-200 group-hover:underline">
+                                                <p className="text-[15px] text-foreground group-hover:text-primary transition-colors duration-200 group-hover:underline">
                                                     {selectedOfficeData.email}
                                                 </p>
                                             </a>
 
                                             <div className="flex items-center space-x-3">
                                                 <Icon name="Clock" size={18} color="var(--color-primary)" />
-                                                <p className="text-sm text-foreground">{selectedOfficeData.hours}</p>
+                                                <p className="text-[15px] text-foreground">{selectedOfficeData.hours}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -184,12 +184,12 @@ const OfficeLocations = () => {
                 </div>
 
                 {/* Bottom Content - Full Width */}
-                <div className="max-w-7xl mx-auto px-4 lg:px-8 mt-8">
+                <div className="max-w-5xl mx-auto px-4 lg:px-8 mt-8">
                     <div className="text-center space-y-3">
-                        <p className="text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                            At Northstep Global, we partner with companies to solve their most critical talent challenges, from executive searches to building high-performing GCCs. Our team is eager to connect and discuss your unique needs. Reach out to us today to discover how Northstep Global can be your strategic partner in achieving unparalleled success.
+                        <p className="text-lg text-muted-foreground">
+                            At Northstep Global, we partner with companies to solve their most critical talent challenges, from executive searches to building high-performing GCCs. Our team is eager to connect and discuss your unique needs. <br /> Reach out to us today to discover how Northstep Global can be your strategic partner in achieving unparalleled success.
                         </p>
-                        <p className="text-muted-foreground">Let's build your future, together.</p>
+                        <p className="text-[17px] text-muted-foreground">Let's build your future, together.</p>
                     </div>
                 </div>
             </div>

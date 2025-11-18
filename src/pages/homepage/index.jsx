@@ -1,10 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
-import HeroSection from './components/HeroSection';
-import TrustIndicators from './components/TrustIndicators';
-import CTASection from './components/CTASection';
+
+// Lazy load components for better performance
+const HeroSection = lazy(() => import('./components/HeroSection'));
+const TrustIndicators = lazy(() => import('./components/TrustIndicators'));
+const AboutSection = lazy(() => import('./components/AboutSection'));
+const ServicesShowcase = lazy(() => import('./components/ServicesShowcase'));
+const CTASection = lazy(() => import('./components/CTASection'));
+
+// Loading component
+const LoadingSection = () => (
+  <div className="py-16 flex items-center justify-center">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+  </div>
+);
 
 const Homepage = () => {
   useEffect(() => {
@@ -32,19 +43,41 @@ const Homepage = () => {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="/homepage" />
+
+        {/* Preload critical resources */}
+        <link rel="preload" href="/assets/images/Logo.png" as="image" />
+        <link rel="preload" href="/assets/images/home_bg.png" as="image" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
         
         <main className="pt-16">
           {/* Hero Section - First impression with dual pathways */}
-          <HeroSection />
-          
+          <Suspense fallback={<LoadingSection />}>
+            <HeroSection />
+          </Suspense>
+
           {/* Trust Indicators - Social proof and metrics */}
-          <TrustIndicators />
-          
+          <Suspense fallback={<LoadingSection />}>
+            <TrustIndicators />
+          </Suspense>
+
+          {/* About Section - Company overview */}
+          <Suspense fallback={<LoadingSection />}>
+            <AboutSection />
+          </Suspense>
+
+          {/* Services Showcase - Our offerings */}
+          <Suspense fallback={<LoadingSection />}>
+            <ServicesShowcase />
+          </Suspense>
+
           {/* CTA Section - Multiple engagement options */}
-          <CTASection />
+          <Suspense fallback={<LoadingSection />}>
+            <CTASection />
+          </Suspense>
         </main>
         <Footer />
       </div>

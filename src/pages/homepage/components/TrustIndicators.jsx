@@ -17,7 +17,7 @@ const TrustIndicators = () => {
 
   return (
     <section className="py-6 bg-background">
-      <div className="max-w-5xl mx-auto px-4 lg:px-0">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Client Logos Carousel */}
         <div className="mb-0">
           <h3 className="text-center text-lg sm:text-xl font-semibold text-foreground mb-8">
@@ -39,7 +39,7 @@ const TrustIndicators = () => {
                   </div>
                   {client?.industry && (
                     <div className="text-center mt-2">
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-[14px] text-muted-foreground">
                         {client?.industry}
                       </span>
                     </div>

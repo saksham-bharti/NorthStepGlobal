@@ -19,7 +19,7 @@ const International = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
                 Global Talent Acquisition Solutions
               </h1>
-              <p className="text-brand-subheading mb-8">
+              <p className="text-brand-subheading">
                 Expand your talent pool across borders with our comprehensive international hiring
                 services. We help organizations access global talent while navigating complex
                 immigration, compliance, and cultural integration challenges.
@@ -30,7 +30,7 @@ const International = () => {
 
         {/* Global Sourcing / International Hiring Overview (text-focused) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Sourcing & International Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Your Gateway to Worldwide Talent</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

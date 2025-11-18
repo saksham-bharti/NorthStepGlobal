@@ -20,7 +20,7 @@ const CTASection = () => {
     },
     {
       method: 'Office',
-      value:  'CoWorkZen 6th Floor, Alphathum, Tower C, Sector 90, Noida, Uttar Pradesh 201304',
+      value:  'Sector 90, Noida, Uttar Pradesh 201304',
       icon: 'MapPin',
       description: 'Visit our headquarters',
       link: 'https://maps.google.com?q=28.5132195,77.4079183'
@@ -29,12 +29,12 @@ const CTASection = () => {
 
   return (
     <section className="py-6 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-      <div className="max-w-5xl mx-auto px-4 lg:px-0">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
 
         {/* Contact Information */}
         <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-0">
+            <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">
               Get in Touch
             </h3>
           </div>
@@ -48,7 +48,7 @@ const CTASection = () => {
                 rel={contact?.method === 'Office' ? 'noopener noreferrer' : undefined}
                 className="text-center group cursor-pointer block"
               >
-                <div className="w-16 h-16 bg-gradient-elevation-subtle rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-elevation-subtle rounded-xl flex items-center justify-center mx-auto mb-4-2 group-hover:scale-110 transition-transform duration-300">
                   <Icon name={contact?.icon} size={24} className="text-primary" />
                 </div>
                 <h4 className="text-xl font-semibold text-foreground mb-2">
@@ -71,7 +71,7 @@ const CTASection = () => {
               className="inline-flex items-center space-x-2 bg-warning/10 px-4 py-2 rounded-full hover:bg-warning/20 transition-all duration-300 cursor-pointer group"
             >
               <Icon name="Clock" size={16} className="text-warning" />
-              <span className="text-sm font-medium text-warning group-hover:underline">
+              <span className="text-[16px] font-medium text-warning group-hover:underline">
                 Urgent Hiring Needs? Call us 24/7 at +91 98711 59600
               </span>
             </a>
@@ -84,7 +84,7 @@ const CTASection = () => {
             <p className="text-xl font-semibold text-foreground mb-4">
               "Your next breakthrough is just one conversation away."
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground">
               Join the thousands of professionals and companies who have transformed their futures with NorthStep.
               Let's discuss how we can help you achieve your goals.
             </p>
