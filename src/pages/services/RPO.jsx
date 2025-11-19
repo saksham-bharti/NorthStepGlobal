@@ -16,12 +16,12 @@ const RPO = () => {
                 <Icon name="Settings" size={16} />
                 Recruitment Process Outsourcing
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Transform Your Recruitment Operations
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Partner with us to outsource your entire recruitment process and gain access to 
-                scalable, technology-driven talent acquisition solutions that deliver superior 
+              <p className="text-brand-subheading mb-2">
+                Partner with us to outsource your entire recruitment process and gain access to
+                scalable, technology-driven talent acquisition solutions that deliver superior
                 results while reducing costs and time-to-hire.
               </p>
             </div>
@@ -30,8 +30,8 @@ const RPO = () => {
 
         {/* RPO Overview (text-focused for HR) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Recruitment Process Outsourcing (RPO)</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Scalable talent, seamless integration</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               In today's competitive talent landscape, managing recruitment surges, specialized hiring, or continuous talent acquisition
@@ -45,27 +45,27 @@ const RPO = () => {
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">What We Take Off Your Plate: Comprehensive RPO Solutions</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">Our RPO services are designed to absorb recruitment complexities,
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our RPO services are designed to absorb recruitment complexities,
               allowing your internal teams to focus on core strategic HR initiatives:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">End-to-End Talent Acquisition Management</h4>
-                <p className="text-muted-foreground">From calibrated intake and robust pipeline building to multi-channel sourcing and
+                <h4 className="text-xl font-semibold text-foreground mb-2">End-to-End Talent Acquisition Management</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">From calibrated intake and robust pipeline building to multi-channel sourcing and
                 advanced screening at scale, we manage every step efficiently.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Optimized Interview & Feedback Orchestration</h4>
-                <p className="text-muted-foreground">We expertly orchestrate interviews, implement structured feedback loops, and
+                <h4 className="text-xl font-semibold text-foreground mb-2">Optimized Interview & Feedback Orchestration</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We expertly orchestrate interviews, implement structured feedback loops, and
                 ensure clear stakeholder alignment to streamline decision-making.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Brand-Safe Talent Marketing & Reporting</h4>
-                <p className="text-muted-foreground">We uphold your employer brand with consistent talent marketing, transparent
+                <h4 className="text-xl font-semibold text-foreground mb-2">Brand-Safe Talent Marketing & Reporting</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We uphold your employer brand with consistent talent marketing, transparent
                 reporting, and strict process SLAs for accountability.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Flexible Capacity for Dynamic Needs</h4>
-                <p className="text-muted-foreground">Dedicated support for seasonal peaks, critical projects, and specialized hiring
+                <h4 className="text-xl font-semibold text-foreground mb-2">Flexible Capacity for Dynamic Needs</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Dedicated support for seasonal peaks, critical projects, and specialized hiring
                 initiatives—always maintaining uncompromising quality standards.</p>
               </div>
             </div>
@@ -75,23 +75,23 @@ const RPO = () => {
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Integrated Specialist Pods & Data-Led Prioritization:</span> We combine
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Integrated Specialist Pods & Data-Led Prioritization:</span> We combine
                   specialist pods with data-led prioritization and intelligent automation, eliminating inefficiencies and dead time between
                   recruitment steps.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Reliable Throughput & Reduced Process Leaks:</span> Gain a consistent,
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Reliable Throughput & Reduced Process Leaks:</span> Gain a consistent,
                   reliable flow of qualified candidates with significantly fewer process leaks and more high-quality interviews.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Enhanced Control & Strategic Focus:</span> You retain full control over
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Enhanced Control & Strategic Focus:</span> You retain full control over
                   final hiring decisions while freeing internal teams to focus on strategic HR initiatives and employee development.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Superior Candidate Experience:</span> Every candidate receives a
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Superior Candidate Experience:</span> Every candidate receives a
                   professional, engaging, and positive experience, enhancing your employer brand.</p>
                 </div>
               </div>

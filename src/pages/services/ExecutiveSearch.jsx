@@ -16,10 +16,10 @@ const ExecutiveSearch = () => {
                 <Icon name="Search" size={16} />
                 Executive Search
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Discover Hidden Executive Talent
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-brand-subheading">
                 An innovative approach to finding key individuals who are not
                 visible in the marketplace and not actively looking for career
                 changes. We uncover exceptional leaders who drive
@@ -31,8 +31,8 @@ const ExecutiveSearch = () => {
         </section>
         {/* Executive Search Overview (text-focused for HR) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Executive Search Practice</h2>
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Executive Search Practice</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Confidential, data-driven leadership hiring</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Finding proven leaders who can execute your strategy is both critical and complex. At Northstep Global, we partner
@@ -43,59 +43,60 @@ const ExecutiveSearch = () => {
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">How We Engage: A Collaborative & Focused Approach</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our methodology ensures precision and alignment at every stage:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Calibrated Discovery</h4>
-                <p className="text-muted-foreground">Align on strategic outcomes, success profiles, and stakeholder expectations to
+                <h4 className="text-xl font-semibold text-foreground mb-2">Calibrated Discovery</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Align on strategic outcomes, success profiles, and stakeholder expectations to
                 set a clear, measurable mandate for the search.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Employer Brand Representation</h4>
-                <p className="text-muted-foreground">Act as an extension of your brand with professionalism and confidentiality,
+                <h4 className="text-xl font-semibold text-foreground mb-2">Employer Brand Representation</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Act as an extension of your brand with professionalism and confidentiality,
                 engaging both active and passive top-tier leaders.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Evidence-Based Shortlists</h4>
-                <p className="text-muted-foreground">Competency matrices, structured feedback, and reference validation ensure
+                <h4 className="text-xl font-semibold text-foreground mb-2">Evidence-Based Shortlists</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Competency matrices, structured feedback, and reference validation ensure
                 decision-ready, data-backed recommendations.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">SLA-Driven Execution</h4>
-                <p className="text-muted-foreground">Clear SLAs for speed, quality, and transparent communication keep you informed
+                <h4 className="text-xl font-semibold text-foreground mb-2">SLA-Driven Execution</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Clear SLAs for speed, quality, and transparent communication keep you informed
                 at every stage.</p>
               </div>
             </div>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Quality Outcomes You Can Expect</h3>
             <div className="rounded-lg border border-border p-6 bg-muted/30 mb-6">
-              <p className="text-muted-foreground leading-relaxed mb-4">Partnering with Northstep Global delivers superior results:</p>
-              <div className="space-y-3">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">Partnering with Northstep Global for Executive Search delivers superior, measurable results:</p>
+              <div className="space-y-2">
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1">Discreet market mapping across relevant peer and adjacent sectors, uncovering exceptional talent.</p>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Discreet Market Intelligence:</span> Access unparalleled talent, mapped across sectors, uncovering exceptional hidden leaders.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1">Role scorecards directly tied to measurable business outcomes and strategic impact.</p>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Outcome-Driven Scorecards:</span> Candidates assessed by quantifiable metrics tied to your strategic business outcomes.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1">Pre-qualified shortlists with strong leadership and culture-alignment signals.</p>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Precision-Matched Shortlists:</span> Receive pre-qualified shortlists with strong leadership and seamless culture fit.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1">Time-bound delivery with transparent status updates and proactive risk flags.</p>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Time-Bound Delivery:</span> Enjoy an efficient process with clear timelines, transparent updates, and proactive risk communication.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1">Enhanced employer brand perception through professional representation.</p>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Elevated Employer Brand:</span> Our professional representation enhances your brand, attracting top-tier executive talent.</p>
                 </div>
               </div>
             </div>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Where We Add the Most Value</h3>
             <div className="rounded-lg border border-border p-6 bg-background">
-              <p className="text-muted-foreground leading-relaxed">Northstep Global excels in searches demanding strategic insight and
+              <p className="text-lg text-muted-foreground leading-relaxed">Northstep Global excels in searches demanding strategic insight and
               nuanced execution. We are the trusted partner for turnarounds, new market entries, first-time leadership hires,
               confidential replacements, and robust succession builds. We focus on impact over mere pedigree, leveraging comparative
               market data to empower your hiring teams to make confident, de-risked decisions, securing leaders who will drive your
@@ -108,7 +109,7 @@ const ExecutiveSearch = () => {
         <section className="py-6">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Our Executive Search Process
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

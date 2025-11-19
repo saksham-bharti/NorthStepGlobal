@@ -30,7 +30,7 @@ const HeroSection = () => {
       <section className="bg-background">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
               Build Exceptional Teams with
               <span className="text-brand-primary"> Strategic </span>
               Talent Partnership

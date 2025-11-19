@@ -16,12 +16,12 @@ const International = () => {
                 <Icon name="Globe" size={16} />
                 International Hiring
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Global Talent Acquisition Solutions
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Expand your talent pool across borders with our comprehensive international hiring 
-                services. We help organizations access global talent while navigating complex 
+              <p className="text-brand-subheading">
+                Expand your talent pool across borders with our comprehensive international hiring
+                services. We help organizations access global talent while navigating complex
                 immigration, compliance, and cultural integration challenges.
               </p>
             </div>
@@ -30,8 +30,8 @@ const International = () => {
 
         {/* Global Sourcing / International Hiring Overview (text-focused) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Sourcing & International Hiring</h2>
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Global Sourcing & International Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">Your Gateway to Worldwide Talent</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               In an increasingly interconnected world, the ability to build truly cross-border, high-performing teams is a significant
@@ -43,28 +43,28 @@ const International = () => {
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">What We Manage: Comprehensive Global Recruitment Solutions</h3>
-            <p className="text-muted-foreground leading-relaxed mb-3">Our end-to-end international hiring solutions are designed to
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our end-to-end international hiring solutions are designed to
               simplify complexity and ensure seamless talent acquisition:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Global Market Intelligence</h4>
-                <p className="text-muted-foreground">We provide in-depth market mapping and critical salary/availability signals across
+                <h4 className="text-xl font-semibold text-foreground mb-2">Global Market Intelligence</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We provide in-depth market mapping and critical salary/availability signals across
                 your target countries, offering a clear picture of the international talent landscape.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Compliance & Mobility Coordination</h4>
-                <p className="text-muted-foreground">We expertly manage the intricate web of international compliance, documentation
+                <h4 className="text-xl font-semibold text-foreground mb-2">Compliance & Mobility Coordination</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We expertly manage the intricate web of international compliance, documentation
                 coordination, and strategic partner alignment (including legal, tax, and immigration specialists), mitigating risks and
                 ensuring smooth transitions.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Streamlined Pipeline & Logistics</h4>
-                <p className="text-muted-foreground">We build robust talent pipelines, manage scheduling across diverse time zones, and
+                <h4 className="text-xl font-semibold text-foreground mb-2">Streamlined Pipeline & Logistics</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We build robust talent pipelines, manage scheduling across diverse time zones, and
                 deliver structured, transparent progress reporting tailored to international operations.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Candidate Care & Onboarding Support</h4>
-                <p className="text-muted-foreground">We coordinate relocation and onboarding logistics, prioritizing exceptional candidate
+                <h4 className="text-xl font-semibold text-foreground mb-2">Candidate Care & Onboarding Support</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We coordinate relocation and onboarding logistics, prioritizing exceptional candidate
                 care to ensure a positive experience and successful integration into your international teams.</p>
               </div>
             </div>
@@ -74,22 +74,22 @@ const International = () => {
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Leadership Transplants:</span> Securing pivotal leadership for new
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Leadership Transplants:</span> Securing pivotal leadership for new
                   international entities or critical market expansions.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Specialty Roles:</span> Sourcing highly specialized skills that are
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Specialty Roles:</span> Sourcing highly specialized skills that are
                   scarce or difficult to find within local talent pools.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Distributed Teams:</span> Building agile, follow-the-sun operations or
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Distributed Teams:</span> Building agile, follow-the-sun operations or
                   establishing remote-first pods that leverage global talent efficiencies.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Surge Hiring:</span> Rapidly scaling talent for new capability centers,
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Surge Hiring:</span> Rapidly scaling talent for new capability centers,
                   R&D hubs, or large-scale project implementations abroad.</p>
                 </div>
               </div>

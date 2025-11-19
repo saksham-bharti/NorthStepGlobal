@@ -12,11 +12,11 @@ const IndustryHero = () => {
             <span className="text-sm font-medium">Industry Expertise</span>
           </div>
           
-          <h1 className="text-brand-hero mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
             Industries We Serve
           </h1>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-brand-subheading">
             Specialized recruitment expertise across key sectors with deep industry knowledge, 
             proven track records, and dedicated consultant teams for each vertical.
           </p>

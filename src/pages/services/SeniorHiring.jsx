@@ -16,12 +16,12 @@ const SeniorHiring = () => {
                 <Icon name="Users" size={16} />
                 Senior & Mid Level Hiring
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Strategic Talent Acquisition for Leadership Roles
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                We specialize in identifying and placing senior and mid-level professionals who bring 
-                strategic value, leadership capabilities, and industry expertise to drive your 
+              <p className="text-brand-subheading">
+                We specialize in identifying and placing senior and mid-level professionals who bring
+                strategic value, leadership capabilities, and industry expertise to drive your
                 organization's growth and success.
               </p>
             </div>
@@ -29,8 +29,8 @@ const SeniorHiring = () => {
         </section>
         {/* Senior & Mid-Level Hiring Overview (text-focused) */}
         <section className="py-6">
-          <div className="max-w-5xl mx-auto px-4 lg:px-0">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2">Senior & Mid-Level Hiring</h2>
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">Senior & Mid-Level Hiring</h2>
             <p className="text-sm uppercase tracking-wide text-primary mb-6">The engine room of your organization</p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Senior and mid-level leaders are the indispensable engine room of any successful business—the professionals who drive
@@ -42,48 +42,49 @@ const SeniorHiring = () => {
             </p>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Our Approach: Strategic, Efficient, and Results-Driven</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">We deploy a comprehensive methodology to secure the right talent:</p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Outcome-Based Role Scorecards</h4>
-                <p className="text-muted-foreground">We develop clear, outcome-based scorecards for each role, integrating market
+                <h4 className="text-xl font-semibold text-foreground mb-2">Outcome-Based Role Scorecards</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">We develop clear, outcome-based scorecards for each role, integrating market
                 insights to ensure appropriate leveling and competitive positioning.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Targeted Sourcing</h4>
-                <p className="text-muted-foreground">Our expansive network and intelligent sourcing strategies identify and engage
+                <h4 className="text-xl font-semibold text-foreground mb-2">Targeted Sourcing</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Our expansive network and intelligent sourcing strategies identify and engage
                 talent from peer companies, adjacent industries, and emerging talent pools.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Behavioral & Situational Assessment</h4>
-                <p className="text-muted-foreground">Rigorous assessment focused on real-world application, using behavioral and
+                <h4 className="text-xl font-semibold text-foreground mb-2">Behavioral & Situational Assessment</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Rigorous assessment focused on real-world application, using behavioral and
                 situational interviewing techniques with detailed comparative notes.</p>
               </div>
               <div className="p-6 rounded-lg border border-border bg-background">
-                <h4 className="font-semibold text-foreground mb-2">Structured Process with Rapid Turnarounds</h4>
-                <p className="text-muted-foreground">Clear timelines, rapid turnarounds, and transparent communication backed by
+                <h4 className="text-xl font-semibold text-foreground mb-2">Structured Process with Rapid Turnarounds</h4>
+                <p className="text-[17px] text-muted-foreground leading-relaxed">Clear timelines, rapid turnarounds, and transparent communication backed by
                 Service Level Agreements (SLAs).</p>
               </div>
             </div>
 
             <h3 className="text-xl font-semibold text-foreground mb-4">Where We Help Most: Powering Your Core Functions</h3>
             <div className="rounded-lg border border-border p-6 bg-muted/30 mb-6">
-              <p className="text-muted-foreground leading-relaxed mb-4">Northstep Global is adept at strengthening the foundational and
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">Northstep Global is adept at strengthening the foundational and
               growth-oriented functions of your organization. We are the trusted partner for:</p>
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Key Functional Hires:</span> From Sales, Product, and Engineering to
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Key Functional Hires:</span> From Sales, Product, and Engineering to
                   Finance, HR, Operations, and Customer functions, we deliver talent that drives immediate impact.</p>
                 </div>
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                  <p className="text-muted-foreground flex-1"><span className="font-medium text-foreground">Single Hires & Cohort Builds:</span> Whether it's filling a crucial
+                  <p className="text-[17px] text-muted-foreground leading-relaxed flex-1"><span className="font-medium text-foreground">Single Hires & Cohort Builds:</span> Whether it's filling a crucial
                   individual role or building entire teams for new locations, greenfield initiatives, or significant capability uplifts,
                   we scale our approach to your needs.</p>
                 </div>
               </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Let Northstep Global be your strategic partner in building robust, high-performing teams at the senior and mid-levels,
               ensuring your business has the leadership capacity to thrive and innovate.
             </p>
@@ -94,7 +95,7 @@ const SeniorHiring = () => {
         <section className="py-6 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                 Senior & Mid-Level Positions We Fill
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -103,8 +104,8 @@ const SeniorHiring = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Briefcase" size={24} className="text-blue-600" />
                 </div>
@@ -118,7 +119,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="TrendingUp" size={24} className="text-green-600" />
                 </div>
@@ -132,7 +133,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Cpu" size={24} className="text-purple-600" />
                 </div>
@@ -146,7 +147,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="DollarSign" size={24} className="text-orange-600" />
                 </div>
@@ -160,7 +161,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Users" size={24} className="text-red-600" />
                 </div>
@@ -174,7 +175,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Package" size={24} className="text-teal-600" />
                 </div>

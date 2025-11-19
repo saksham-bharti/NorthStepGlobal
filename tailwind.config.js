@@ -7,6 +7,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -57,14 +58,38 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
-        accent: ['Playfair Display', 'serif']
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif'],
+        serif: ['Playfair Display', 'Times New Roman', 'Times', 'serif'],
+        accent: ['Playfair Display', 'Times New Roman', 'Times', 'serif']
       },
       fontSize: {
         'brand-hero': ['3.5rem', { lineHeight: '1.1', fontWeight: '700' }],
         'brand-headline': ['2.25rem', { lineHeight: '1.2', fontWeight: '600' }],
-        'brand-subheading': ['1.25rem', { lineHeight: '1.4', fontWeight: '500' }]
+        'brand-subheading': ['1.25rem', { lineHeight: '1.4', fontWeight: '500' }],
+        'xs': ['0.75rem', { lineHeight: '1.5' }],
+        'sm': ['0.875rem', { lineHeight: '1.5714285714285714' }],
+        'base': ['1rem', { lineHeight: '1.5' }],
+        'lg': ['1.125rem', { lineHeight: '1.5555555555555556' }],
+        'xl': ['1.25rem', { lineHeight: '1.4' }],
+        '2xl': ['1.5rem', { lineHeight: '1.3333333333333333' }],
+        '3xl': ['1.875rem', { lineHeight: '1.2' }],
+        '4xl': ['2.25rem', { lineHeight: '1.1111111111111112' }],
+        '5xl': ['3rem', { lineHeight: '1' }],
+        '6xl': ['3.75rem', { lineHeight: '1' }],
+        '7xl': ['4.5rem', { lineHeight: '1' }],
+        '8xl': ['6rem', { lineHeight: '1' }],
+        '9xl': ['8rem', { lineHeight: '1' }]
+      },
+      fontWeight: {
+        thin: '100',
+        extralight: '200',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+        black: '900'
       },
       spacing: {
         '18': '4.5rem',
@@ -104,9 +129,9 @@ export default {
         '300%': '300%'
       },
       boxShadow: {
-        'brand': '0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(255, 149, 0, 0.05)',
-        'brand-hover': '0 8px 24px rgba(0, 0, 0, 0.15), 0 16px 48px rgba(255, 149, 0, 0.1)',
-        'elevation': '0 8px 32px rgba(255, 149, 0, 0.2)'
+        'brand': '0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(250, 180, 22, 0.05)',
+        'brand-hover': '0 8px 24px rgba(0, 0, 0, 0.15), 0 16px 48px rgba(250, 180, 22, 0.1)',
+        'elevation': '0 8px 32px rgba(250, 180, 22, 0.2)'
       },
       backdropBlur: {
         xs: '2px'

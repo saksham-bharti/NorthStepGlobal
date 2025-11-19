@@ -20,7 +20,7 @@ const TrustIndicators = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Client Logos Carousel */}
         <div className="mb-0">
-          <h3 className="text-center text-lg font-semibold text-foreground mb-8">
+          <h3 className="text-center text-lg sm:text-xl font-semibold text-foreground mb-8">
             Comprehensive End-to-End Recruitment Solutions Across Industries
           </h3>
           <div className="overflow-hidden">
@@ -32,14 +32,14 @@ const TrustIndicators = () => {
                 >
                   <div className="w-32 h-16 bg-card rounded-lg border border-border flex items-center justify-center p-4 group-hover:shadow-lg transition-shadow duration-300">
                     <div className="w-full h-full bg-muted rounded flex items-center justify-center">
-                      <span className="text-xs font-medium text-muted-foreground text-center">
+                      <span className="text-sm font-medium text-muted-foreground text-center">
                         {client?.name}
                       </span>
                     </div>
                   </div>
                   {client?.industry && (
                     <div className="text-center mt-2">
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-[14px] text-muted-foreground">
                         {client?.industry}
                       </span>
                     </div>
