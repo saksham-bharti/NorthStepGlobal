@@ -16,7 +16,7 @@ const ExecutiveSearch = () => {
                 <Icon name="Search" size={16} />
                 Executive Search
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Discover Hidden Executive Talent
               </h1>
               <p className="text-brand-subheading">

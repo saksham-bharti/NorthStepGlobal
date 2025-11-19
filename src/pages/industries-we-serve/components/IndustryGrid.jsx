@@ -18,7 +18,7 @@ const IndustryGrid = () => {
       name: "Healthcare & Life Sciences",
       icon: "Heart",
       description: "Connecting healthcare professionals with leading medical institutions and life sciences organizations.",
-      image: "https://static.investindia.gov.in/s3fs-public/2023-11/Untitled-1%20%281%29.png?auto=compress&cs=tinysrgb&w=800",
+      image: "https://oneteaminfotech.com/wp-content/uploads/2024/04/19646756_m-1-scaled-1-1536x887.jpg?auto=compress&cs=tinysrgb&w=800",
       specializations: ["Clinical Research", "Medical Devices", "Pharmaceuticals", "Healthcare IT", "Nursing"]
     },
     {

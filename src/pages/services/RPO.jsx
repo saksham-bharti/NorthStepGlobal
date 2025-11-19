@@ -16,7 +16,7 @@ const RPO = () => {
                 <Icon name="Settings" size={16} />
                 Recruitment Process Outsourcing
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Transform Your Recruitment Operations
               </h1>
               <p className="text-brand-subheading mb-2">

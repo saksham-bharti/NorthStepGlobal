@@ -90,7 +90,7 @@ const ServicesShowcase = () => {
                                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                                     {service.title}
                                 </h3>
-                                <p className="text-[17px] muted-foreground mb-4 leading-relaxed">
+                                <p className="text-[17px] text-muted-foreground mb-4 leading-relaxed">
                                     {service.description}
                                 </p>
 

@@ -16,7 +16,7 @@ const SeniorHiring = () => {
                 <Icon name="Users" size={16} />
                 Senior & Mid Level Hiring
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Strategic Talent Acquisition for Leadership Roles
               </h1>
               <p className="text-brand-subheading">
@@ -105,7 +105,7 @@ const SeniorHiring = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Briefcase" size={24} className="text-blue-600" />
                 </div>
@@ -119,7 +119,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="TrendingUp" size={24} className="text-green-600" />
                 </div>
@@ -133,7 +133,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Cpu" size={24} className="text-purple-600" />
                 </div>
@@ -147,7 +147,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="DollarSign" size={24} className="text-orange-600" />
                 </div>
@@ -161,7 +161,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Users" size={24} className="text-red-600" />
                 </div>
@@ -175,7 +175,7 @@ const SeniorHiring = () => {
                 </ul>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
+              <div className="bg-card p-8 rounded-lg shadow-sm border border-border">
                 <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Package" size={24} className="text-teal-600" />
                 </div>

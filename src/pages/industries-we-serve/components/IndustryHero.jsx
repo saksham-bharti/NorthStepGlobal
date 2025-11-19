@@ -12,7 +12,7 @@ const IndustryHero = () => {
             <span className="text-sm font-medium">Industry Expertise</span>
           </div>
           
-          <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
             Industries We Serve
           </h1>
           

@@ -24,7 +24,7 @@ const AboutPage = () => {
                                     <Icon name="Users" size={16} />
                                     <span className="text-sm font-medium">About Us</span>
                                 </div>
-                                <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+                                <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                                     About North Step Global
                                 </h1>
                                 <p className="text-brand-subheading">
@@ -62,32 +62,32 @@ const AboutPage = () => {
 
                             <h3 className="text-xl font-semibold text-foreground mb-4 mt-8">Our Core Values</h3>
                             <div className="grid md:grid-cols-3 gap-6">
-                                <div className="p-6 rounded-lg border border-border bg-background">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                        <Icon name="Target" size={24} className="text-primary" />
+                                <div className="p-6 rounded-lg border border-border bg-background hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                        <Icon name="Target" size={24} className="text-primary group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <h4 className="text-xl font-semibold text-foreground mb-2">Our Mission</h4>
-                                    <p className="text-[17px] text-muted-foreground leading-relaxed">
+                                    <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Our Mission</h4>
+                                    <p className="text-[17px] text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                                         Empower organizations by delivering strategic, reliable, and quality-driven hiring solutions that ensure cultural alignment and long-term success.
                                     </p>
                                 </div>
 
-                                <div className="p-6 rounded-lg border border-border bg-background">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                        <Icon name="Award" size={24} className="text-primary" />
+                                <div className="p-6 rounded-lg border border-border bg-background hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                        <Icon name="Award" size={24} className="text-primary group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <h4 className="text-xl font-semibold text-foreground mb-2">Our Approach</h4>
-                                    <p className="text-[17px] text-muted-foreground leading-relaxed">
+                                    <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Our Approach</h4>
+                                    <p className="text-[17px] text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                                         Combine data-driven insights with a human touch to deliver recruitment solutions that go beyond filling positions.
                                     </p>
                                 </div>
 
-                                <div className="p-6 rounded-lg border border-border bg-background">
-                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                        <Icon name="TrendingUp" size={24} className="text-primary" />
+                                <div className="p-6 rounded-lg border border-border bg-background hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+                                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                        <Icon name="TrendingUp" size={24} className="text-primary group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <h4 className="text-xl font-semibold text-foreground mb-2">Our Impact</h4>
-                                    <p className="text-[17px] text-muted-foreground leading-relaxed">
+                                    <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Our Impact</h4>
+                                    <p className="text-[17px] text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                                         Help companies scale with the right people and purpose, building partnerships that fuel growth and transformation.
                                     </p>
                                 </div>
@@ -115,7 +115,7 @@ const AboutPage = () => {
                                 <div className="grid lg:grid-cols-3 gap-0">
                                     {/* Left Side - Founder Image */}
                                     <div className="lg:col-span-1 bg-gradient-to-br from-primary/10 to-primary/5 p-8 flex flex-col items-center justify-center border-r border-border">
-                                        <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-white shadow-lg">
+                                        <div className="w-72 h-72 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-white shadow-lg">
                                             <Image
                                                 src="/assets/images/Founder.jpg"
                                                 alt="Raghvendra - Founder, North Step Global"
@@ -143,17 +143,17 @@ const AboutPage = () => {
                                             <div className="flex items-center justify-center gap-3">
                                                 <a
                                                     href="#"
-                                                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                                                    className="w-10 h-10 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 group"
                                                     aria-label="LinkedIn"
                                                 >
-                                                    <Icon name="Linkedin" size={18} />
+                                                    <Icon name="Linkedin" size={18} className="text-muted-foreground group-hover:text-white group-hover:rotate-12 transition-all duration-300" />
                                                 </a>
                                                 <a
                                                     href="mailto:contact@north-step.com"
-                                                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                                                    className="w-10 h-10 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 group"
                                                     aria-label="Email"
                                                 >
-                                                    <Icon name="Mail" size={18} />
+                                                    <Icon name="Mail" size={18} className="text-muted-foreground group-hover:text-white group-hover:-rotate-12 transition-all duration-300" />
                                                 </a>
                                             </div>
                                         </div>
@@ -231,16 +231,16 @@ const AboutPage = () => {
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <a
                                         href="/contact"
-                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300"
+                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 group"
                                     >
-                                        <Icon name="Mail" size={20} />
+                                        <Icon name="Mail" size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                                         Get in Touch
                                     </a>
                                     <a
                                         href="/services/ExecutiveSearch"
-                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-muted text-foreground rounded-lg font-semibold hover:bg-muted/80 transition-all duration-300 border border-border"
+                                        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-muted text-foreground rounded-lg font-semibold hover:bg-muted/80 hover:text-primary transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 border border-border group"
                                     >
-                                        <Icon name="Briefcase" size={20} />
+                                        <Icon name="Briefcase" size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                                         Our Services
                                     </a>
                                 </div>

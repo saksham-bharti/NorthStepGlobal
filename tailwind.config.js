@@ -7,6 +7,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -128,9 +129,9 @@ export default {
         '300%': '300%'
       },
       boxShadow: {
-        'brand': '0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(255, 149, 0, 0.05)',
-        'brand-hover': '0 8px 24px rgba(0, 0, 0, 0.15), 0 16px 48px rgba(255, 149, 0, 0.1)',
-        'elevation': '0 8px 32px rgba(255, 149, 0, 0.2)'
+        'brand': '0 4px 16px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(250, 180, 22, 0.05)',
+        'brand-hover': '0 8px 24px rgba(0, 0, 0, 0.15), 0 16px 48px rgba(250, 180, 22, 0.1)',
+        'elevation': '0 8px 32px rgba(250, 180, 22, 0.2)'
       },
       backdropBlur: {
         xs: '2px'

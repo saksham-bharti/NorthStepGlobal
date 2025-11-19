@@ -214,7 +214,7 @@ const ContactPage = () => {
                                 <Icon name="Phone" size={16} />
                                 <span className="text-sm font-medium">Contact Us</span>
                             </div>
-                            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">Get in Touch with Northstep Global</h1>
+                            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">Get in Touch with Northstep Global</h1>
                             <div className="max-w-4xl mx-auto space-y-3">
                                 <p className="text-brand-subheading">
                                     Ready to elevate your talent strategy to expand your team? We are here to help.

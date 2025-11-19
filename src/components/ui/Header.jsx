@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
+import ThemeToggle from './ThemeToggle';
 // Removed CTA Button usage per new header spec
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-14 lg:h-16 px-4 lg:px-8">
           {/* Logo */}
@@ -75,7 +76,7 @@ const Header = () => {
                 <span>Services</span>
                 <Icon name="ChevronDown" size={16} />
               </button>
-              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 absolute left-0 top-full w-56 rounded-lg border border-border bg-white shadow-lg py-2">
+              <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 absolute left-0 top-full w-56 rounded-lg border border-border bg-background shadow-lg py-2">
                 {servicesItems.map((svc) => (
                   <Link
                     key={svc.path}
@@ -145,22 +146,30 @@ const Header = () => {
             </Link>
           </nav>
 
+          {/* Desktop Theme Toggle */}
+          <div className="hidden lg:block ml-2">
+            <ThemeToggle />
+          </div>
+
           {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="lg:hidden p-2 rounded-lg text-foreground hover:bg-muted transition-colors duration-200"
-            aria-label="Toggle mobile menu"
-          >
-            <Icon 
-              name={isMobileMenuOpen ? 'X' : 'Menu'} 
-              size={24} 
-            />
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={toggleMobileMenu}
+              className="p-2 rounded-lg text-foreground hover:bg-muted transition-colors duration-200"
+              aria-label="Toggle mobile menu"
+            >
+              <Icon
+                name={isMobileMenuOpen ? 'X' : 'Menu'}
+                size={24}
+              />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-white">
+          <div className="lg:hidden border-t border-border bg-background">
             <nav className="px-4 py-4 space-y-2">
               {navigationItems?.map((item) => (
                 <Link

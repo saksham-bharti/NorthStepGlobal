@@ -16,7 +16,7 @@ const GCCHiring = () => {
                 <Icon name="Building2" size={16} />
                 GCC Hiring
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
                 Global Capability Centers Excellence
               </h1>
               <p className="text-brand-subheading mb-2">
