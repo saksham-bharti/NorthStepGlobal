@@ -20,9 +20,9 @@ const CTASection = () => {
     },
     {
       method: 'Office',
-      value:  'Sector 90, Noida, Uttar Pradesh 201304',
+      value:  'CoWorkZen 6th Floor, Tower C, Sector 90, Noida, Uttar Pradesh',
       icon: 'MapPin',
-      description: 'Visit our headquarters',
+      description: 'Visit our office',
       link: 'https://maps.google.com?q=28.5132195,77.4079183'
     }
   ];

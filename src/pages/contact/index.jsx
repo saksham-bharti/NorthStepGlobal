@@ -12,7 +12,6 @@ const OfficeLocations = () => {
         {
             id: 'headquarters',
             name: 'Corporate Office',
-            type: 'Main Office',
             address: 'CoWorkZen 6th Floor, Alphathum, Tower C, Sector 90',
             city: 'Noida, Uttar Pradesh 201304',
             phone: '+91 98711 59600',
@@ -24,7 +23,6 @@ const OfficeLocations = () => {
         {
             id: 'registered',
             name: 'Registered Office',
-            type: 'Registered Address',
             address: '2-A/3, S/F Front Side, Asaf Ali Road, Turkman Gate A.G.C.R.',
             city: 'New Delhi, Central Delhi, DL 110002',
             phone: '+91 98711 59600',
@@ -71,7 +69,6 @@ const OfficeLocations = () => {
                                     </div>
                                     <div className="flex-1">
                                         <h4 className="font-semibold text-foreground">{office.name}</h4>
-                                        <p className="text-[15px] text-muted-foreground">{office.type}</p>
                                         <p className="text-[15px] text-muted-foreground mt-1">{office.city}</p>
                                     </div>
                                     {selectedOffice === office.id && (

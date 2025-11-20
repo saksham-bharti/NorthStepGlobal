@@ -104,9 +104,32 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className={`space-y-2 text-sm ${isLight ? "text-background/80" : "text-muted-foreground"}`}>
-              <li>+91 98711 59600</li>
-              <li>contact@north-step.com</li>
-              <li> Noida, Uttar Pradesh </li>
+            <li>
+                <a
+                  href="tel:+919871159600"
+                  className={`${isLight ? "hover:text-primary" : "hover:text-primary"} transition-colors  underline-offset-2`}
+                >
+                  +91 98711 59600
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@north-step.com"
+                  className={`${isLight ? "hover:text-primary" : "hover:text-primary"} transition-colors  underline-offset-2`}
+                >
+                  contact@north-step.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.google.com?q=28.5132195,77.4079183"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${isLight ? "hover:text-primary" : "hover:text-primary"} transition-colors  underline-offset-2`}
+                >
+                  CoWorkZen 6th Floor, Tower C, Sector 90, Noida, Uttar Pradesh
+                </a>
+              </li>
             </ul>
           </div>
         </div>
