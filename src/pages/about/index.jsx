@@ -4,8 +4,11 @@ import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
+import { useIntersectionObserver } from '../../utils/useIntersectionObserver';
 
 const AboutPage = () => {
+    const [heroRef, heroInView] = useIntersectionObserver();
+
     return (
         <>
             <Helmet>
@@ -17,17 +20,23 @@ const AboutPage = () => {
                 <Header />
                 <main className="pt-16">
                     {/* Hero Section */}
-                    <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+                    <section ref={heroRef} className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
                         <div className="max-w-7xl mx-auto px-4 lg:px-8">
                             <div className="text-center max-w-4xl mx-auto">
-                                <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary">
+                                <div className={`inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary transition-all duration-1000 ${
+                                    heroInView ? 'animate-slide-up' : 'opacity-0 translate-y-8'
+                                }`}>
                                     <Icon name="Users" size={16} />
                                     <span className="text-sm font-medium">About Us</span>
                                 </div>
-                                <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
+                                <h1 className={`text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground transition-all duration-1000 delay-300 ${
+                                    heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                                }`}>
                                     About North Step Global
                                 </h1>
-                                <p className="text-brand-subheading">
+                                <p className={`text-brand-subheading transition-all duration-1000 delay-500 ${
+                                    heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                                }`}>
                                     We help organizations take the right step toward building exceptional teams
                                 </p>
                             </div>

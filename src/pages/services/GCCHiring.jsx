@@ -2,24 +2,33 @@ import React from 'react';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Icon from '../../components/AppIcon';
+import { useIntersectionObserver } from '../../utils/useIntersectionObserver';
 
 const GCCHiring = () => {
+  const [heroRef, heroInView] = useIntersectionObserver();
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+        <section ref={heroRef} className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className={`inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 transition-all duration-1000 ${
+                heroInView ? 'animate-slide-up' : 'opacity-0 translate-y-8'
+              }`}>
                 <Icon name="Building2" size={16} />
                 GCC Hiring
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
+              <h1 className={`text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground transition-all duration-1000 delay-300 ${
+                heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+              }`}>
                 Global Capability Centers Excellence
               </h1>
-              <p className="text-brand-subheading mb-2">
+              <p className={`text-brand-subheading mb-2 transition-all duration-1000 delay-500 ${
+                heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+              }`}>
               Specialized recruitment for GCCs and GICs, delivering top-tier talent for technology, finance, and business operations.
               </p>
             </div>
