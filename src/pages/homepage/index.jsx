@@ -2,6 +2,7 @@ import React, { useEffect, Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
+import { usePageTransition } from '../../utils/usePageTransition';
 
 // Lazy load components for better performance
 const HeroSection = lazy(() => import('./components/HeroSection'));
@@ -10,14 +11,11 @@ const AboutSection = lazy(() => import('./components/AboutSection'));
 const ServicesShowcase = lazy(() => import('./components/ServicesShowcase'));
 const CTASection = lazy(() => import('./components/CTASection'));
 
-// Loading component
-const LoadingSection = () => (
-  <div className="py-16 flex items-center justify-center">
-    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
-  </div>
-);
+
 
 const Homepage = () => {
+  const { isLoading, progress } = usePageTransition();
+
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
@@ -55,29 +53,18 @@ const Homepage = () => {
         
         <main className="pt-16">
           {/* Hero Section - First impression with dual pathways */}
-          <Suspense fallback={<LoadingSection />}>
             <HeroSection />
-          </Suspense>
 
           {/* Trust Indicators - Social proof and metrics */}
-          <Suspense fallback={<LoadingSection />}>
             <TrustIndicators />
-          </Suspense>
 
-          {/* About Section - Company overview */}
-          <Suspense fallback={<LoadingSection />}>
             <AboutSection />
-          </Suspense>
 
           {/* Services Showcase - Our offerings */}
-          <Suspense fallback={<LoadingSection />}>
             <ServicesShowcase />
-          </Suspense>
 
           {/* CTA Section - Multiple engagement options */}
-          <Suspense fallback={<LoadingSection />}>
             <CTASection />
-          </Suspense>
         </main>
         <Footer />
       </div>
