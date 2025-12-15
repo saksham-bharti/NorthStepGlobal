@@ -115,9 +115,6 @@ const AboutPage = () => {
                                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                                     Founder's Corner
                                 </h2>
-                                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                                    Meet the Visionary
-                                </p>
                             </div>
 
                             <div className="rounded-lg border border-border bg-background overflow-hidden">
