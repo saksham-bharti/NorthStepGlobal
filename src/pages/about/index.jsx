@@ -115,9 +115,6 @@ const AboutPage = () => {
                                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
                                     Founder's Corner
                                 </h2>
-                                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                                    About Our Founder
-                                </p>
                             </div>
 
                             <div className="rounded-lg border border-border bg-background overflow-hidden">
@@ -126,7 +123,7 @@ const AboutPage = () => {
                                     <div className="lg:col-span-1 bg-gradient-to-br from-primary/10 to-primary/5 p-8 flex flex-col items-center justify-center border-r border-border">
                                         <div className="w-72 h-72 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-white shadow-lg">
                                             <Image
-                                                src="/assets/images/Founder.jpg"
+                                                src="/assets/images/Founder.jpeg"
                                                 alt="Raghvendra - Founder, North Step Global"
                                                 className="w-full h-full object-cover"
                                                 placeholder={
