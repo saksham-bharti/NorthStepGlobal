@@ -46,15 +46,37 @@ const Footer = () => {
               Strategic talent partnerships that transform careers and organizations. Your next step north starts here.
             </p>
             <div className="flex space-x-4">
-              {/* <a href="https://www.linkedin.com/in/northstep-global-7b1274397/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}> */}
+              {/* <a href="https://www.linkedin.com/in/northstep-global-7b1274397/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}>
                 <Icon name="Linkedin" size={20} />
-              {/* </a> */}
-              {/* <a href="https://www.instagram.com/northstepglobal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}> */}
+              </a> */}
+              <a href="https://www.instagram.com/northstepglobal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}>
                 <Icon name="Instagram" size={20} />
-              {/* </a> */}
-              {/* <a href="https://www.youtube.com/@northstep" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}> */}
+              </a>
+              <a href="https://www.youtube.com/@NorthStepGlobal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={isLight ? "text-background/60 hover:text-background" : "text-muted-foreground hover:text-foreground"}>
                 <Icon name="Youtube" size={20} />
-              {/* </a> */}
+              </a>
+              <a
+                href="https://x.com/NorthstepGlobal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (formerly Twitter)"
+                className={
+                  isLight
+                    ? "text-background/60 hover:text-background"
+                    : "text-muted-foreground hover:text-foreground"
+                }
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.6l-5.17-6.68-5.84 6.68H1.58l7.73-8.84L1.5 2.25h6.76l4.67 6.01 5.31-6.01z" />
+                </svg>
+              </a>
+
             </div>
           </div>
 
@@ -104,7 +126,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className={`space-y-2 text-sm ${isLight ? "text-background/80" : "text-muted-foreground"}`}>
-            <li>
+              <li>
                 <a
                   href="tel:+919871159600"
                   className={`${isLight ? "hover:text-primary" : "hover:text-primary"} transition-colors  underline-offset-2`}
