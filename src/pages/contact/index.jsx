@@ -4,6 +4,7 @@ import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
+import { useIntersectionObserver } from '../../utils/useIntersectionObserver';
 
 const OfficeLocations = () => {
     const [selectedOffice, setSelectedOffice] = useState('headquarters');
@@ -12,7 +13,6 @@ const OfficeLocations = () => {
         {
             id: 'headquarters',
             name: 'Corporate Office',
-            type: 'Main Office',
             address: 'CoWorkZen 6th Floor, Alphathum, Tower C, Sector 90',
             city: 'Noida, Uttar Pradesh 201304',
             phone: '+91 98711 59600',
@@ -24,7 +24,6 @@ const OfficeLocations = () => {
         {
             id: 'registered',
             name: 'Registered Office',
-            type: 'Registered Address',
             address: '2-A/3, S/F Front Side, Asaf Ali Road, Turkman Gate A.G.C.R.',
             city: 'New Delhi, Central Delhi, DL 110002',
             phone: '+91 98711 59600',
@@ -71,7 +70,6 @@ const OfficeLocations = () => {
                                     </div>
                                     <div className="flex-1">
                                         <h4 className="font-semibold text-foreground">{office.name}</h4>
-                                        <p className="text-[15px] text-muted-foreground">{office.type}</p>
                                         <p className="text-[15px] text-muted-foreground mt-1">{office.city}</p>
                                     </div>
                                     {selectedOffice === office.id && (
@@ -198,6 +196,8 @@ const OfficeLocations = () => {
 };
 
 const ContactPage = () => {
+    const [heroRef, heroInView] = useIntersectionObserver();
+
     return (
         <>
             <Helmet>
@@ -208,15 +208,21 @@ const ContactPage = () => {
             <div className="min-h-screen bg-background">
                 <Header />
                 <main className="pt-16">
-                    <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+                    <section ref={heroRef} className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
                         <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
-                            <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary">
+                            <div className={`inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary transition-all duration-1000 ${
+                                heroInView ? 'animate-slide-up' : 'opacity-0 translate-y-8'
+                            }`}>
                                 <Icon name="Phone" size={16} />
                                 <span className="text-sm font-medium">Contact Us</span>
                             </div>
-                            <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">Get in Touch with Northstep Global</h1>
+                            <h1 className={`text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground transition-all duration-1000 delay-300 ${
+                                heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                            }`}>Get in Touch with Northstep Global</h1>
                             <div className="max-w-4xl mx-auto space-y-3">
-                                <p className="text-brand-subheading">
+                                <p className={`text-brand-subheading transition-all duration-1000 delay-500 ${
+                                    heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                                }`}>
                                     Ready to elevate your talent strategy to expand your team? We are here to help.
                                 </p>
                             </div>

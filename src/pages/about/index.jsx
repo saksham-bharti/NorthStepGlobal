@@ -4,8 +4,11 @@ import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
+import { useIntersectionObserver } from '../../utils/useIntersectionObserver';
 
 const AboutPage = () => {
+    const [heroRef, heroInView] = useIntersectionObserver();
+
     return (
         <>
             <Helmet>
@@ -17,17 +20,23 @@ const AboutPage = () => {
                 <Header />
                 <main className="pt-16">
                     {/* Hero Section */}
-                    <section className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
+                    <section ref={heroRef} className="bg-gradient-to-br from-primary/5 via-background to-primary/5 py-8">
                         <div className="max-w-7xl mx-auto px-4 lg:px-8">
                             <div className="text-center max-w-4xl mx-auto">
-                                <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary">
+                                <div className={`inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 text-primary transition-all duration-1000 ${
+                                    heroInView ? 'animate-slide-up' : 'opacity-0 translate-y-8'
+                                }`}>
                                     <Icon name="Users" size={16} />
                                     <span className="text-sm font-medium">About Us</span>
                                 </div>
-                                <h1 className="text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground">
+                                <h1 className={`text-3xl sm:text-4xl lg:text-brand-hero font-bold mb-6 leading-tight text-foreground transition-all duration-1000 delay-300 ${
+                                    heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                                }`}>
                                     About North Step Global
                                 </h1>
-                                <p className="text-brand-subheading">
+                                <p className={`text-brand-subheading transition-all duration-1000 delay-500 ${
+                                    heroInView ? 'animate-slide-up-delay' : 'opacity-0 translate-y-8'
+                                }`}>
                                     We help organizations take the right step toward building exceptional teams
                                 </p>
                             </div>
@@ -107,7 +116,7 @@ const AboutPage = () => {
                                     Founder's Corner
                                 </h2>
                                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                                    Meet the visionary behind North Step Global
+                                    About Our Founder
                                 </p>
                             </div>
 
@@ -120,7 +129,6 @@ const AboutPage = () => {
                                                 src="/assets/images/Founder.jpg"
                                                 alt="Raghvendra - Founder, North Step Global"
                                                 className="w-full h-full object-cover"
-                                                errorSrc="/assets/images/placeholder-founder.png"
                                                 placeholder={
                                                     <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
                                                         <Icon name="User" size={48} className="text-primary/60" />
@@ -130,26 +138,27 @@ const AboutPage = () => {
                                         </div>
                                         <div className="text-center">
                                             <h3 className="text-2xl font-bold text-foreground mb-1">
-                                                Raghvendra
+                                                Raghvendra Singh
                                             </h3>
-                                            <p className="text-lg text-primary font-semibold mb-1">
-                                                Founder & CEO
+                                            <p className="text-[17px] text-primary font-semibold mb-1">
+                                                Founder & Director
                                             </p>
-                                            <p className="text-sm text-muted-foreground mb-4">
+                                            <p className="text-[16px] text-muted-foreground mb-4">
                                                 North Step Global
                                             </p>
 
                                             {/* Social Links */}
                                             <div className="flex items-center justify-center gap-3">
                                                 <a
-                                                    href="#"
+                                                    href="https://www.linkedin.com/in/raghvendra-singh-a3b8309/"
+                                                    target="_blank"
                                                     className="w-10 h-10 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 group"
                                                     aria-label="LinkedIn"
                                                 >
                                                     <Icon name="Linkedin" size={18} className="text-muted-foreground group-hover:text-white group-hover:rotate-12 transition-all duration-300" />
                                                 </a>
                                                 <a
-                                                    href="mailto:contact@north-step.com"
+                                                    href="mailto:raghvendra@north-step.com"
                                                     className="w-10 h-10 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 group"
                                                     aria-label="Email"
                                                 >
@@ -161,16 +170,16 @@ const AboutPage = () => {
 
                                     {/* Right Side - Founder Bio */}
                                     <div className="lg:col-span-2 p-8">
-                                        <div className="space-y-6">
+                                        <div className="space-y-4">
                                             <div>
-                                                <h4 className="text-xl font-semibold text-foreground mb-4">
-                                                    A Decade of Excellence in Talent & Strategy
+                                                <h4 className="text-xl font-semibold text-foreground">
+                                                    Over 15 years of experience in Talent & Strategy
                                                 </h4>
                                             </div>
 
                                             <div className="space-y-4">
                                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                                    With over a decade of experience in human resources, talent acquisition, sales and strategic advisory, Raghvendra brings a deep understanding of how people and strategy drive organisational success. Before founding North Step Global, he spent several years with Naukri.com, India's leading talent platform, where he gained invaluable insights into workforce trends, recruitment best practices, and the evolving needs of modern businesses.
+                                                    With over 15 years of experience in human resources, talent acquisition, sales and strategic advisory, Raghvendra brings a deep understanding of how people and strategy drive organisational success. Before founding North Step Global, he spent several years with Naukri.com, India's leading talent platform, where he gained invaluable insights into workforce trends, recruitment best practices, and the evolving needs of modern businesses.
                                                 </p>
                                                 <p className="text-lg text-muted-foreground leading-relaxed">
                                                     His experience at Naukri.com inspired him to establish North Step Global — a people-centric recruitment and advisory firm committed to helping organizations build high-performing teams and achieve sustainable growth. Under his leadership, the firm partners with clients across industries to deliver tailored solutions in recruitment, leadership development, and organizational effectiveness.
@@ -181,33 +190,52 @@ const AboutPage = () => {
                                             </div>
 
                                             {/* Key Highlights */}
-                                            <div className="grid sm:grid-cols-2 gap-4 pt-4">
-                                                <div className="flex items-start gap-3">
-                                                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                                                    <div>
-                                                        <p className="text-[17px] font-medium text-foreground">10+ Years Experience</p>
-                                                        <p className="text-sm text-muted-foreground">In HR & Talent Acquisition</p>
+                                            <div className="grid sm:grid-cols-2 gap-3 pt-2">
+                                                <div className="group p-3 rounded-lg border border-border/50 bg-gradient-to-br from-primary/5 to-primary/10 hover:border-primary/30 hover:shadow-md hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                                            <Icon name="Award" size={20} className="text-primary group-hover:text-white transition-colors duration-300" />
+                                                        </div>
+                                                        <div>
+                                                            <p className="text-[17px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300">15+ Years Experience</p>
+                                                            <p className="text-[15px] text-muted-foreground">In HR & Talent Acquisition</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex items-start gap-3">
-                                                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                                                    <div>
-                                                        <p className="text-[17px] font-medium text-foreground">Former Naukri.com</p>
-                                                        <p className="text-sm text-muted-foreground">Strategic Leadership Role</p>
+
+                                                <div className="group p-3 rounded-lg border border-border/50 bg-gradient-to-br from-primary/5 to-primary/10 hover:border-primary/30 hover:shadow-md hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                                            <Icon name="Briefcase" size={20} className="text-primary group-hover:text-white transition-colors duration-300" />
+                                                        </div>
+                                                        <div>
+                                                            <p className="text-[17px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Former Naukri.com</p>
+                                                            <p className="text-[15px] text-muted-foreground">Strategic Leadership Role</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex items-start gap-3">
-                                                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                                                    <div>
-                                                        <p className="text-[17px] font-medium text-foreground">People-Centric Approach</p>
-                                                        <p className="text-sm text-muted-foreground">Data + Human Touch</p>
+
+                                                <div className="group p-3 rounded-lg border border-border/50 bg-gradient-to-br from-primary/5 to-primary/10 hover:border-primary/30 hover:shadow-md hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                                            <Icon name="Users" size={20} className="text-primary group-hover:text-white transition-colors duration-300" />
+                                                        </div>
+                                                        <div>
+                                                            <p className="text-[17px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300">People-Centric Approach</p>
+                                                            <p className="text-[15px] text-muted-foreground">Data + Human Touch</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex items-start gap-3">
-                                                    <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
-                                                    <div>
-                                                        <p className="text-[17px] font-medium text-foreground">Innovation Leader</p>
-                                                        <p className="text-sm text-muted-foreground">Driving Transformation</p>
+
+                                                <div className="group p-3 rounded-lg border border-border/50 bg-gradient-to-br from-primary/5 to-primary/10 hover:border-primary/30 hover:shadow-md hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                                            <Icon name="TrendingUp" size={20} className="text-primary group-hover:text-white transition-colors duration-300" />
+                                                        </div>
+                                                        <div>
+                                                            <p className="text-[17px] font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Innovation Leader</p>
+                                                            <p className="text-[15px] text-muted-foreground">Driving Transformation</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
